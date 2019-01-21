@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		230C9B957942DA6517CC3BB9 /* libPods-TYCProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BBB53F2239593F67A27E98 /* libPods-TYCProject.a */; };
+		DD0ADB6221F57B4A001D91A4 /* NSString+AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADB6121F57B4A001D91A4 /* NSString+AddMethod.m */; };
+		DD0ADB6B21F5990A001D91A4 /* UILabel+AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADB6A21F5990A001D91A4 /* UILabel+AddMethod.m */; };
+		DD0ADBB821F5A8BE001D91A4 /* NSArray+AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADBB721F5A8BE001D91A4 /* NSArray+AddMethod.m */; };
+		DD0ADBBD21F5AA69001D91A4 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADBB921F5AA65001D91A4 /* UITextView+Placeholder.m */; };
+		DDBB4B6421E6DCBB00618D86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4B6321E6DCBB00618D86 /* AppDelegate.m */; };
+		DDBB4B6721E6DCBB00618D86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4B6621E6DCBB00618D86 /* ViewController.m */; };
+		DDBB4B6A21E6DCBB00618D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBB4B6821E6DCBB00618D86 /* Main.storyboard */; };
+		DDBB4B6C21E6DCBF00618D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBB4B6B21E6DCBF00618D86 /* Assets.xcassets */; };
+		DDBB4B6F21E6DCBF00618D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBB4B6D21E6DCBF00618D86 /* LaunchScreen.storyboard */; };
+		DDBB4B7221E6DCBF00618D86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4B7121E6DCBF00618D86 /* main.m */; };
+		DDBB4B7C21E6DCBF00618D86 /* TYCProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4B7B21E6DCBF00618D86 /* TYCProjectTests.m */; };
+		DDBB4B8721E6DCBF00618D86 /* TYCProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4B8621E6DCBF00618D86 /* TYCProjectUITests.m */; };
+		DDBB4BAD21E6E13800618D86 /* BaseNavgationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BAC21E6E13800618D86 /* BaseNavgationViewController.m */; };
+		DDBB4BB021E6E15D00618D86 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BAF21E6E15D00618D86 /* BaseViewController.m */; };
+		DDBB4BB321E6E1AA00618D86 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BB221E6E1AA00618D86 /* BaseTabBarViewController.m */; };
+		DDBB4BBF21E6F49300618D86 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BBD21E6F49300618D86 /* UIViewExt.m */; };
+		DDBB4BC221E6F4C900618D86 /* UIView+TYCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BC121E6F4C900618D86 /* UIView+TYCViewController.m */; };
+		DDBB4BC521E6F63D00618D86 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BC421E6F63D00618D86 /* HomePageViewController.m */; };
+		DDBB4BC821E6F64B00618D86 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BC721E6F64B00618D86 /* MineViewController.m */; };
+		DDBB4BD021E7200E00618D86 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BCF21E7200E00618D86 /* Constant.m */; };
+		DDBB4BD521E724F300618D86 /* TNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BD421E724F300618D86 /* TNetworking.m */; };
+		DDBB4BD821E733B700618D86 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BD721E733B700618D86 /* CustomTabBar.m */; };
+		DDBB4BDB21E738A800618D86 /* CustomBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BDA21E738A800618D86 /* CustomBarButton.m */; };
+		DDBB4BE121E73DAB00618D86 /* AppDelegate+rd3.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BE021E73DAB00618D86 /* AppDelegate+rd3.m */; };
+		DDBB4BE421E7561800618D86 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BE321E7561800618D86 /* CenterViewController.m */; };
+		DDBB4BE721E756AF00618D86 /* CustomNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BE621E756AF00618D86 /* CustomNavigationView.m */; };
+		DDBB4BEA21E759BA00618D86 /* UIImage+AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BE921E759BA00618D86 /* UIImage+AddMethod.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDBB4B7821E6DCBF00618D86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDBB4B5721E6DCBA00618D86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDBB4B5E21E6DCBB00618D86;
+			remoteInfo = TYCProject;
+		};
+		DDBB4B8321E6DCBF00618D86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDBB4B5721E6DCBA00618D86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDBB4B5E21E6DCBB00618D86;
+			remoteInfo = TYCProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4224A3DFE33838B24F5294D9 /* Pods-TYCProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYCProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TYCProject/Pods-TYCProject.debug.xcconfig"; sourceTree = "<group>"; };
+		B1BBB53F2239593F67A27E98 /* libPods-TYCProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYCProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26E13936B08FFA4342E7691 /* Pods-TYCProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYCProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TYCProject/Pods-TYCProject.release.xcconfig"; sourceTree = "<group>"; };
+		DD0ADB6021F57B4A001D91A4 /* NSString+AddMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+AddMethod.h"; sourceTree = "<group>"; };
+		DD0ADB6121F57B4A001D91A4 /* NSString+AddMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AddMethod.m"; sourceTree = "<group>"; };
+		DD0ADB6921F59909001D91A4 /* UILabel+AddMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AddMethod.h"; sourceTree = "<group>"; };
+		DD0ADB6A21F5990A001D91A4 /* UILabel+AddMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AddMethod.m"; sourceTree = "<group>"; };
+		DD0ADBB621F5A8BE001D91A4 /* NSArray+AddMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+AddMethod.h"; sourceTree = "<group>"; };
+		DD0ADBB721F5A8BE001D91A4 /* NSArray+AddMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+AddMethod.m"; sourceTree = "<group>"; };
+		DD0ADBB921F5AA65001D91A4 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		DD0ADBBA21F5AA68001D91A4 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		DDBB4B5F21E6DCBB00618D86 /* TYCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBB4B6221E6DCBB00618D86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDBB4B6321E6DCBB00618D86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDBB4B6521E6DCBB00618D86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DDBB4B6621E6DCBB00618D86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DDBB4B6921E6DCBB00618D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDBB4B6B21E6DCBF00618D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDBB4B6E21E6DCBF00618D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDBB4B7021E6DCBF00618D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBB4B7121E6DCBF00618D86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDBB4B7721E6DCBF00618D86 /* TYCProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYCProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBB4B7B21E6DCBF00618D86 /* TYCProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYCProjectTests.m; sourceTree = "<group>"; };
+		DDBB4B7D21E6DCBF00618D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBB4B8221E6DCBF00618D86 /* TYCProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYCProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBB4B8621E6DCBF00618D86 /* TYCProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYCProjectUITests.m; sourceTree = "<group>"; };
+		DDBB4B8821E6DCBF00618D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBB4BAB21E6E13800618D86 /* BaseNavgationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavgationViewController.h; sourceTree = "<group>"; };
+		DDBB4BAC21E6E13800618D86 /* BaseNavgationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavgationViewController.m; sourceTree = "<group>"; };
+		DDBB4BAE21E6E15D00618D86 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		DDBB4BAF21E6E15D00618D86 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		DDBB4BB121E6E1AA00618D86 /* BaseTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarViewController.h; sourceTree = "<group>"; };
+		DDBB4BB221E6E1AA00618D86 /* BaseTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
+		DDBB4BB521E6E62100618D86 /* TYCProject.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYCProject.pch; sourceTree = "<group>"; };
+		DDBB4BB821E6F2F000618D86 /* Configs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Configs.h; sourceTree = "<group>"; };
+		DDBB4BBC21E6F3DF00618D86 /* NSObject+EEE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+EEE.h"; sourceTree = "<group>"; };
+		DDBB4BBD21E6F49300618D86 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		DDBB4BBE21E6F49300618D86 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		DDBB4BC021E6F4C900618D86 /* UIView+TYCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TYCViewController.h"; sourceTree = "<group>"; };
+		DDBB4BC121E6F4C900618D86 /* UIView+TYCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYCViewController.m"; sourceTree = "<group>"; };
+		DDBB4BC321E6F63D00618D86 /* HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		DDBB4BC421E6F63D00618D86 /* HomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		DDBB4BC621E6F64B00618D86 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		DDBB4BC721E6F64B00618D86 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		DDBB4BCE21E7200E00618D86 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		DDBB4BCF21E7200E00618D86 /* Constant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		DDBB4BD121E7227900618D86 /* RuleMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuleMacros.h; sourceTree = "<group>"; };
+		DDBB4BD221E722B000618D86 /* ApiMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiMacros.h; sourceTree = "<group>"; };
+		DDBB4BD321E724F300618D86 /* TNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNetworking.h; sourceTree = "<group>"; };
+		DDBB4BD421E724F300618D86 /* TNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNetworking.m; sourceTree = "<group>"; };
+		DDBB4BD621E733B700618D86 /* CustomTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
+		DDBB4BD721E733B700618D86 /* CustomTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
+		DDBB4BD921E738A800618D86 /* CustomBarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBarButton.h; sourceTree = "<group>"; };
+		DDBB4BDA21E738A800618D86 /* CustomBarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBarButton.m; sourceTree = "<group>"; };
+		DDBB4BDF21E73DAB00618D86 /* AppDelegate+rd3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+rd3.h"; sourceTree = "<group>"; };
+		DDBB4BE021E73DAB00618D86 /* AppDelegate+rd3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+rd3.m"; sourceTree = "<group>"; };
+		DDBB4BE221E7561800618D86 /* CenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
+		DDBB4BE321E7561800618D86 /* CenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
+		DDBB4BE521E756AF00618D86 /* CustomNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavigationView.h; sourceTree = "<group>"; };
+		DDBB4BE621E756AF00618D86 /* CustomNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationView.m; sourceTree = "<group>"; };
+		DDBB4BE821E759BA00618D86 /* UIImage+AddMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+AddMethod.h"; sourceTree = "<group>"; };
+		DDBB4BE921E759BA00618D86 /* UIImage+AddMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AddMethod.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDBB4B5C21E6DCBB00618D86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230C9B957942DA6517CC3BB9 /* libPods-TYCProject.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBB4B7421E6DCBF00618D86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBB4B7F21E6DCBF00618D86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DB6083A3564EC87939C6672 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1BBB53F2239593F67A27E98 /* libPods-TYCProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EC44E226C0F3B26D3866F0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4224A3DFE33838B24F5294D9 /* Pods-TYCProject.debug.xcconfig */,
+				C26E13936B08FFA4342E7691 /* Pods-TYCProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DDBB4B5621E6DCBA00618D86 = {
+			isa = PBXGroup;
+			children = (
+				DDBB4B6121E6DCBB00618D86 /* TYCProject */,
+				DDBB4B7A21E6DCBF00618D86 /* TYCProjectTests */,
+				DDBB4B8521E6DCBF00618D86 /* TYCProjectUITests */,
+				DDBB4B6021E6DCBB00618D86 /* Products */,
+				7EC44E226C0F3B26D3866F0C /* Pods */,
+				5DB6083A3564EC87939C6672 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DDBB4B6021E6DCBB00618D86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4B5F21E6DCBB00618D86 /* TYCProject.app */,
+				DDBB4B7721E6DCBF00618D86 /* TYCProjectTests.xctest */,
+				DDBB4B8221E6DCBF00618D86 /* TYCProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDBB4B6121E6DCBB00618D86 /* TYCProject */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4B9421E6E0AA00618D86 /* Classes */,
+				DDBB4B6221E6DCBB00618D86 /* AppDelegate.h */,
+				DDBB4B6321E6DCBB00618D86 /* AppDelegate.m */,
+				DDBB4BDF21E73DAB00618D86 /* AppDelegate+rd3.h */,
+				DDBB4BE021E73DAB00618D86 /* AppDelegate+rd3.m */,
+				DDBB4B6521E6DCBB00618D86 /* ViewController.h */,
+				DDBB4B6621E6DCBB00618D86 /* ViewController.m */,
+				DDBB4B6821E6DCBB00618D86 /* Main.storyboard */,
+				DDBB4B6B21E6DCBF00618D86 /* Assets.xcassets */,
+				DDBB4B6D21E6DCBF00618D86 /* LaunchScreen.storyboard */,
+				DDBB4B7021E6DCBF00618D86 /* Info.plist */,
+				DDBB4B7121E6DCBF00618D86 /* main.m */,
+			);
+			path = TYCProject;
+			sourceTree = "<group>";
+		};
+		DDBB4B7A21E6DCBF00618D86 /* TYCProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4B7B21E6DCBF00618D86 /* TYCProjectTests.m */,
+				DDBB4B7D21E6DCBF00618D86 /* Info.plist */,
+			);
+			path = TYCProjectTests;
+			sourceTree = "<group>";
+		};
+		DDBB4B8521E6DCBF00618D86 /* TYCProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4B8621E6DCBF00618D86 /* TYCProjectUITests.m */,
+				DDBB4B8821E6DCBF00618D86 /* Info.plist */,
+			);
+			path = TYCProjectUITests;
+			sourceTree = "<group>";
+		};
+		DDBB4B9421E6E0AA00618D86 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4B9521E6E0AA00618D86 /* LoginAndRegister */,
+				DDBB4B9921E6E0AA00618D86 /* HomePage */,
+				DDBB4BA121E6E0AA00618D86 /* Mine */,
+				DDBB4B9D21E6E0AA00618D86 /* MyKit */,
+				DDBB4BA521E6E0AA00618D86 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DDBB4B9521E6E0AA00618D86 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4B9621E6E0AA00618D86 /* Models */,
+				DDBB4B9721E6E0AA00618D86 /* Controllers */,
+				DDBB4B9821E6E0AA00618D86 /* Views */,
+			);
+			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		DDBB4B9621E6E0AA00618D86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDBB4B9721E6E0AA00618D86 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DDBB4B9821E6E0AA00618D86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDBB4B9921E6E0AA00618D86 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4B9A21E6E0AA00618D86 /* Models */,
+				DDBB4B9B21E6E0AA00618D86 /* Controllers */,
+				DDBB4B9C21E6E0AA00618D86 /* Views */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		DDBB4B9A21E6E0AA00618D86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDBB4B9B21E6E0AA00618D86 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4BC321E6F63D00618D86 /* HomePageViewController.h */,
+				DDBB4BC421E6F63D00618D86 /* HomePageViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DDBB4B9C21E6E0AA00618D86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDBB4B9D21E6E0AA00618D86 /* MyKit */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4B9E21E6E0AA00618D86 /* Tools */,
+				DDBB4B9F21E6E0AA00618D86 /* Extension */,
+				DDBB4BA021E6E0AA00618D86 /* Category */,
+			);
+			path = MyKit;
+			sourceTree = "<group>";
+		};
+		DDBB4B9E21E6E0AA00618D86 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4BBE21E6F49300618D86 /* UIViewExt.h */,
+				DDBB4BBD21E6F49300618D86 /* UIViewExt.m */,
+				DDBB4BD321E724F300618D86 /* TNetworking.h */,
+				DDBB4BD421E724F300618D86 /* TNetworking.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		DDBB4B9F21E6E0AA00618D86 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4BBC21E6F3DF00618D86 /* NSObject+EEE.h */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DDBB4BA021E6E0AA00618D86 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4BC021E6F4C900618D86 /* UIView+TYCViewController.h */,
+				DDBB4BC121E6F4C900618D86 /* UIView+TYCViewController.m */,
+				DDBB4BE821E759BA00618D86 /* UIImage+AddMethod.h */,
+				DDBB4BE921E759BA00618D86 /* UIImage+AddMethod.m */,
+				DD0ADB6021F57B4A001D91A4 /* NSString+AddMethod.h */,
+				DD0ADB6121F57B4A001D91A4 /* NSString+AddMethod.m */,
+				DD0ADBB621F5A8BE001D91A4 /* NSArray+AddMethod.h */,
+				DD0ADBB721F5A8BE001D91A4 /* NSArray+AddMethod.m */,
+				DD0ADB6921F59909001D91A4 /* UILabel+AddMethod.h */,
+				DD0ADB6A21F5990A001D91A4 /* UILabel+AddMethod.m */,
+				DD0ADBBA21F5AA68001D91A4 /* UITextView+Placeholder.h */,
+				DD0ADBB921F5AA65001D91A4 /* UITextView+Placeholder.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		DDBB4BA121E6E0AA00618D86 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4BA221E6E0AA00618D86 /* Models */,
+				DDBB4BA321E6E0AA00618D86 /* Controllers */,
+				DDBB4BA421E6E0AA00618D86 /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		DDBB4BA221E6E0AA00618D86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDBB4BA321E6E0AA00618D86 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4BC621E6F64B00618D86 /* MineViewController.h */,
+				DDBB4BC721E6F64B00618D86 /* MineViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DDBB4BA421E6E0AA00618D86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDBB4BA521E6E0AA00618D86 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4BA621E6E0AA00618D86 /* Config */,
+				DDBB4BA721E6E0AA00618D86 /* Macros */,
+				DDBB4BA821E6E0AA00618D86 /* Base */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DDBB4BA621E6E0AA00618D86 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4BB521E6E62100618D86 /* TYCProject.pch */,
+				DDBB4BB821E6F2F000618D86 /* Configs.h */,
+				DDBB4BCE21E7200E00618D86 /* Constant.h */,
+				DDBB4BCF21E7200E00618D86 /* Constant.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		DDBB4BA721E6E0AA00618D86 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4BD121E7227900618D86 /* RuleMacros.h */,
+				DDBB4BD221E722B000618D86 /* ApiMacros.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		DDBB4BA821E6E0AA00618D86 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4BA921E6E0AA00618D86 /* Controllers */,
+				DDBB4BAA21E6E0AA00618D86 /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DDBB4BA921E6E0AA00618D86 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4BAB21E6E13800618D86 /* BaseNavgationViewController.h */,
+				DDBB4BAC21E6E13800618D86 /* BaseNavgationViewController.m */,
+				DDBB4BAE21E6E15D00618D86 /* BaseViewController.h */,
+				DDBB4BAF21E6E15D00618D86 /* BaseViewController.m */,
+				DDBB4BB121E6E1AA00618D86 /* BaseTabBarViewController.h */,
+				DDBB4BB221E6E1AA00618D86 /* BaseTabBarViewController.m */,
+				DDBB4BE221E7561800618D86 /* CenterViewController.h */,
+				DDBB4BE321E7561800618D86 /* CenterViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DDBB4BAA21E6E0AA00618D86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB4BD621E733B700618D86 /* CustomTabBar.h */,
+				DDBB4BD721E733B700618D86 /* CustomTabBar.m */,
+				DDBB4BD921E738A800618D86 /* CustomBarButton.h */,
+				DDBB4BDA21E738A800618D86 /* CustomBarButton.m */,
+				DDBB4BE521E756AF00618D86 /* CustomNavigationView.h */,
+				DDBB4BE621E756AF00618D86 /* CustomNavigationView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDBB4B5E21E6DCBB00618D86 /* TYCProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDBB4B8B21E6DCBF00618D86 /* Build configuration list for PBXNativeTarget "TYCProject" */;
+			buildPhases = (
+				239BF3CA8924833AA5FA709E /* [CP] Check Pods Manifest.lock */,
+				DDBB4B5B21E6DCBB00618D86 /* Sources */,
+				DDBB4B5C21E6DCBB00618D86 /* Frameworks */,
+				DDBB4B5D21E6DCBB00618D86 /* Resources */,
+				E9E86602A15FC413F911BAB0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYCProject;
+			productName = TYCProject;
+			productReference = DDBB4B5F21E6DCBB00618D86 /* TYCProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDBB4B7621E6DCBF00618D86 /* TYCProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDBB4B8E21E6DCBF00618D86 /* Build configuration list for PBXNativeTarget "TYCProjectTests" */;
+			buildPhases = (
+				DDBB4B7321E6DCBF00618D86 /* Sources */,
+				DDBB4B7421E6DCBF00618D86 /* Frameworks */,
+				DDBB4B7521E6DCBF00618D86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDBB4B7921E6DCBF00618D86 /* PBXTargetDependency */,
+			);
+			name = TYCProjectTests;
+			productName = TYCProjectTests;
+			productReference = DDBB4B7721E6DCBF00618D86 /* TYCProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDBB4B8121E6DCBF00618D86 /* TYCProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDBB4B9121E6DCBF00618D86 /* Build configuration list for PBXNativeTarget "TYCProjectUITests" */;
+			buildPhases = (
+				DDBB4B7E21E6DCBF00618D86 /* Sources */,
+				DDBB4B7F21E6DCBF00618D86 /* Frameworks */,
+				DDBB4B8021E6DCBF00618D86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDBB4B8421E6DCBF00618D86 /* PBXTargetDependency */,
+			);
+			name = TYCProjectUITests;
+			productName = TYCProjectUITests;
+			productReference = DDBB4B8221E6DCBF00618D86 /* TYCProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDBB4B5721E6DCBA00618D86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = tangyunchuan;
+				TargetAttributes = {
+					DDBB4B5E21E6DCBB00618D86 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					DDBB4B7621E6DCBF00618D86 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = DDBB4B5E21E6DCBB00618D86;
+					};
+					DDBB4B8121E6DCBF00618D86 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = DDBB4B5E21E6DCBB00618D86;
+					};
+				};
+			};
+			buildConfigurationList = DDBB4B5A21E6DCBB00618D86 /* Build configuration list for PBXProject "TYCProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDBB4B5621E6DCBA00618D86;
+			productRefGroup = DDBB4B6021E6DCBB00618D86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDBB4B5E21E6DCBB00618D86 /* TYCProject */,
+				DDBB4B7621E6DCBF00618D86 /* TYCProjectTests */,
+				DDBB4B8121E6DCBF00618D86 /* TYCProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDBB4B5D21E6DCBB00618D86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBB4B6F21E6DCBF00618D86 /* LaunchScreen.storyboard in Resources */,
+				DDBB4B6C21E6DCBF00618D86 /* Assets.xcassets in Resources */,
+				DDBB4B6A21E6DCBB00618D86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBB4B7521E6DCBF00618D86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBB4B8021E6DCBF00618D86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		239BF3CA8924833AA5FA709E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TYCProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9E86602A15FC413F911BAB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TYCProject/Pods-TYCProject-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TYCProject/Pods-TYCProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDBB4B5B21E6DCBB00618D86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBB4BBF21E6F49300618D86 /* UIViewExt.m in Sources */,
+				DDBB4BE421E7561800618D86 /* CenterViewController.m in Sources */,
+				DDBB4BC521E6F63D00618D86 /* HomePageViewController.m in Sources */,
+				DDBB4B6721E6DCBB00618D86 /* ViewController.m in Sources */,
+				DDBB4BC221E6F4C900618D86 /* UIView+TYCViewController.m in Sources */,
+				DDBB4BC821E6F64B00618D86 /* MineViewController.m in Sources */,
+				DDBB4BB021E6E15D00618D86 /* BaseViewController.m in Sources */,
+				DDBB4BD821E733B700618D86 /* CustomTabBar.m in Sources */,
+				DDBB4BD021E7200E00618D86 /* Constant.m in Sources */,
+				DDBB4BDB21E738A800618D86 /* CustomBarButton.m in Sources */,
+				DDBB4BE721E756AF00618D86 /* CustomNavigationView.m in Sources */,
+				DD0ADB6221F57B4A001D91A4 /* NSString+AddMethod.m in Sources */,
+				DDBB4BAD21E6E13800618D86 /* BaseNavgationViewController.m in Sources */,
+				DDBB4BEA21E759BA00618D86 /* UIImage+AddMethod.m in Sources */,
+				DDBB4BB321E6E1AA00618D86 /* BaseTabBarViewController.m in Sources */,
+				DD0ADBBD21F5AA69001D91A4 /* UITextView+Placeholder.m in Sources */,
+				DDBB4B7221E6DCBF00618D86 /* main.m in Sources */,
+				DDBB4BE121E73DAB00618D86 /* AppDelegate+rd3.m in Sources */,
+				DD0ADB6B21F5990A001D91A4 /* UILabel+AddMethod.m in Sources */,
+				DD0ADBB821F5A8BE001D91A4 /* NSArray+AddMethod.m in Sources */,
+				DDBB4BD521E724F300618D86 /* TNetworking.m in Sources */,
+				DDBB4B6421E6DCBB00618D86 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBB4B7321E6DCBF00618D86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBB4B7C21E6DCBF00618D86 /* TYCProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDBB4B7E21E6DCBF00618D86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBB4B8721E6DCBF00618D86 /* TYCProjectUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDBB4B7921E6DCBF00618D86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDBB4B5E21E6DCBB00618D86 /* TYCProject */;
+			targetProxy = DDBB4B7821E6DCBF00618D86 /* PBXContainerItemProxy */;
+		};
+		DDBB4B8421E6DCBF00618D86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDBB4B5E21E6DCBB00618D86 /* TYCProject */;
+			targetProxy = DDBB4B8321E6DCBF00618D86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDBB4B6821E6DCBB00618D86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDBB4B6921E6DCBB00618D86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDBB4B6D21E6DCBF00618D86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDBB4B6E21E6DCBF00618D86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDBB4B8921E6DCBF00618D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DDBB4B8A21E6DCBF00618D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDBB4B8C21E6DCBF00618D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4224A3DFE33838B24F5294D9 /* Pods-TYCProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 832LY843KW;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TYCProject/Classes/Main/Config/TYCProject.pch;
+				INFOPLIST_FILE = TYCProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = miaoshou.net.TYCProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DDBB4B8D21E6DCBF00618D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C26E13936B08FFA4342E7691 /* Pods-TYCProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 832LY843KW;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TYCProject/Classes/Main/Config/TYCProject.pch;
+				INFOPLIST_FILE = TYCProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = miaoshou.net.TYCProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DDBB4B8F21E6DCBF00618D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 832LY843KW;
+				INFOPLIST_FILE = TYCProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = miaoshou.net.TYCProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYCProject.app/TYCProject";
+			};
+			name = Debug;
+		};
+		DDBB4B9021E6DCBF00618D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 832LY843KW;
+				INFOPLIST_FILE = TYCProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = miaoshou.net.TYCProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYCProject.app/TYCProject";
+			};
+			name = Release;
+		};
+		DDBB4B9221E6DCBF00618D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 832LY843KW;
+				INFOPLIST_FILE = TYCProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = miaoshou.net.TYCProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TYCProject;
+			};
+			name = Debug;
+		};
+		DDBB4B9321E6DCBF00618D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 832LY843KW;
+				INFOPLIST_FILE = TYCProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = miaoshou.net.TYCProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TYCProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDBB4B5A21E6DCBB00618D86 /* Build configuration list for PBXProject "TYCProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBB4B8921E6DCBF00618D86 /* Debug */,
+				DDBB4B8A21E6DCBF00618D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDBB4B8B21E6DCBF00618D86 /* Build configuration list for PBXNativeTarget "TYCProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBB4B8C21E6DCBF00618D86 /* Debug */,
+				DDBB4B8D21E6DCBF00618D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDBB4B8E21E6DCBF00618D86 /* Build configuration list for PBXNativeTarget "TYCProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBB4B8F21E6DCBF00618D86 /* Debug */,
+				DDBB4B9021E6DCBF00618D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDBB4B9121E6DCBF00618D86 /* Build configuration list for PBXNativeTarget "TYCProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBB4B9221E6DCBF00618D86 /* Debug */,
+				DDBB4B9321E6DCBF00618D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDBB4B5721E6DCBA00618D86 /* Project object */;
+}
