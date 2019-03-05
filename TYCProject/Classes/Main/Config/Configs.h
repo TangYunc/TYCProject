@@ -19,12 +19,20 @@
 //category
 #import "UIView+TYCViewController.h"
 #import "UIImage+AddMethod.h"
+#import "NSString+AddMethod.h"
+#import "UITableViewCell+ShareCell.h"
+#import "UIBarButtonItem+TYC.h"
 //extension
 
 //Tools
 #import "UIViewExt.h"
+#import "UIViewUtil.h"
+#import "UIViewTools.h"
+#import "YXAlertView.h"
 
 //第三方
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
 
 
 

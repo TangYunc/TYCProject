@@ -25,11 +25,11 @@
 #define AdjustsScrollViewInsetNever(controller,view) if(@available(iOS 11.0, *)) {view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;} else if([controller isKindOfClass:[UIViewController class]]) {controller.automaticallyAdjustsScrollViewInsets = false;}
 
 //高度系数 812.0 是iPhoneX的高度尺寸，667.0表示是iPhone 8 的高度，如果你觉的它会变化，那我也很无奈
-#define heightCoefficient (kScreenHeight == 812.0 ? 667.0/667.0 : kWJScreenHeight/667.0)
+#define heightCoefficient (kScreenHeight == isiPhoneX ? 667.0/667.0 : kWJScreenHeight/667.0)
 //导航的高度为64，在哪个手机上面都是不变的,iPhone X没出来之前是对的，随便写64,iPhone X出来后，导航栏高度变为88
-#define SafeAreaTopHeight (kScreenHeight == 812.0 ? 88 : 64)
+#define SafeAreaTopHeight (kScreenHeight == isiPhoneX ? 88 : 64)
 //底部宏，底部角圆角的距离是34，设置底部的按钮按钮底部距离底部34
-#define SafeAreaBottomHeight (kScreenHeight == 812.0 ? 34 : 0)
+#define SafeAreaBottomHeight (kScreenHeight == isiPhoneX ? 34 : 0)
 //状态栏高度，iPhone X的状态栏由原来的20变更为现在的44,来凸现齐刘海(kScreenHeight == 812.0 ? 44 : 20)
 #define kStatusBarHeigth ([UIApplication sharedApplication].statusBarFrame.size.height)
 //NavBar高度
@@ -69,8 +69,9 @@
 #define kBlackText888Color 0x888888
 #define kNavBgColor kWhiteColor//0xf8f8f8
 #define kShadowColor 0xe5e7ed
-
-
+#define kDocBlueColor 0x0082ef
+#define kBgViewColor 0xf4f4f4
+#define kBlackText999Color 0xb6b7c2
 
 
 /// 字体
@@ -100,13 +101,16 @@
 
 /// 系统
 /////////////////////////////////////////////////////////////////////////////////
+#define isiPhone4 CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size)
+#define isiPhone5 CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)
+
 #define isIOS6 ([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0)
 #define isIOS7 ([UIDevice currentDevice].systemVersion.doubleValue >= 7.0)
 #define isIOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
 #define isIOS9 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
 #define isIOS10 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)
 #define isIOS11 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0)
-
+#define isiPhoneX kStatusBarHeigth>20
 
 
 

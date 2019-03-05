@@ -12,6 +12,7 @@
 		DD0ADB6B21F5990A001D91A4 /* UILabel+AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADB6A21F5990A001D91A4 /* UILabel+AddMethod.m */; };
 		DD0ADBB821F5A8BE001D91A4 /* NSArray+AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADBB721F5A8BE001D91A4 /* NSArray+AddMethod.m */; };
 		DD0ADBBD21F5AA69001D91A4 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADBB921F5AA65001D91A4 /* UITextView+Placeholder.m */; };
+		DD86857F222E1E0E00775399 /* UIBarButtonItem+TYC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD86857E222E1E0E00775399 /* UIBarButtonItem+TYC.m */; };
 		DDBB4B6421E6DCBB00618D86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4B6321E6DCBB00618D86 /* AppDelegate.m */; };
 		DDBB4B6721E6DCBB00618D86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4B6621E6DCBB00618D86 /* ViewController.m */; };
 		DDBB4B6A21E6DCBB00618D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBB4B6821E6DCBB00618D86 /* Main.storyboard */; };
@@ -35,6 +36,35 @@
 		DDBB4BE421E7561800618D86 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BE321E7561800618D86 /* CenterViewController.m */; };
 		DDBB4BE721E756AF00618D86 /* CustomNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BE621E756AF00618D86 /* CustomNavigationView.m */; };
 		DDBB4BEA21E759BA00618D86 /* UIImage+AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BE921E759BA00618D86 /* UIImage+AddMethod.m */; };
+		DDFF4B6221F6B3100009B59D /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B5021F6B3100009B59D /* TZAssetCell.m */; };
+		DDFF4B6321F6B3100009B59D /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B5121F6B3100009B59D /* TZVideoPlayerController.m */; };
+		DDFF4B6421F6B3100009B59D /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B5221F6B3100009B59D /* TZAssetModel.m */; };
+		DDFF4B6521F6B3100009B59D /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B5321F6B3100009B59D /* NSBundle+TZImagePicker.m */; };
+		DDFF4B6621F6B3100009B59D /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B5521F6B3100009B59D /* UIView+Layout.m */; };
+		DDFF4B6721F6B3100009B59D /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B5621F6B3100009B59D /* TZPhotoPreviewController.m */; };
+		DDFF4B6821F6B3100009B59D /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDFF4B5721F6B3100009B59D /* TZImagePickerController.bundle */; };
+		DDFF4B6921F6B3100009B59D /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B5921F6B3100009B59D /* TZImageManager.m */; };
+		DDFF4B6A21F6B3100009B59D /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B5A21F6B3100009B59D /* TZPhotoPickerController.m */; };
+		DDFF4B6B21F6B3100009B59D /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B5B21F6B3100009B59D /* TZPhotoPreviewCell.m */; };
+		DDFF4B6C21F6B3100009B59D /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B6121F6B3100009B59D /* TZImagePickerController.m */; };
+		DDFF4B8721F6B3360009B59D /* FilmPrescriptionUploadDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B7021F6B3360009B59D /* FilmPrescriptionUploadDetailViewController.m */; };
+		DDFF4B8821F6B3360009B59D /* FilmPrescriptionUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B7121F6B3360009B59D /* FilmPrescriptionUploadViewController.m */; };
+		DDFF4B8921F6B3360009B59D /* CustomPrescriptionUploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B7421F6B3360009B59D /* CustomPrescriptionUploadManager.m */; };
+		DDFF4B8A21F6B3360009B59D /* SectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B7621F6B3360009B59D /* SectionModel.m */; };
+		DDFF4B8B21F6B3360009B59D /* FilmPrescriptionUploadDetailStatuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B7921F6B3360009B59D /* FilmPrescriptionUploadDetailStatuCell.m */; };
+		DDFF4B8C21F6B3360009B59D /* FilmPrescriptionUploadView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B7D21F6B3360009B59D /* FilmPrescriptionUploadView.m */; };
+		DDFF4B8D21F6B3360009B59D /* TYCTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B7F21F6B3360009B59D /* TYCTestCell.m */; };
+		DDFF4B8E21F6B3360009B59D /* FilmPrescriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B8121F6B3360009B59D /* FilmPrescriptionView.m */; };
+		DDFF4B8F21F6B3360009B59D /* FilmPrescriptionUploadDetailTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B8221F6B3360009B59D /* FilmPrescriptionUploadDetailTableView.m */; };
+		DDFF4B9021F6B3360009B59D /* FilmPrescriptionUploadOrderHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B8321F6B3360009B59D /* FilmPrescriptionUploadOrderHeadView.m */; };
+		DDFF4B9121F6B3360009B59D /* FilmPrescriptionUploadSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B8521F6B3360009B59D /* FilmPrescriptionUploadSectionCell.m */; };
+		DDFF4B9921FADBBB0009B59D /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B9821FADBBB0009B59D /* BaseCell.m */; };
+		DDFF4B9C21FADCED0009B59D /* UIViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B9B21FADCED0009B59D /* UIViewUtil.m */; };
+		DDFF4B9F21FAE02C0009B59D /* FooterButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B9E21FAE02C0009B59D /* FooterButtonView.m */; };
+		DDFF4BA221FAE57F0009B59D /* UIViewTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4BA021FAE57F0009B59D /* UIViewTools.m */; };
+		DDFF4BA521FAE8400009B59D /* PrescriptionBuyDrugBottomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4BA421FAE8400009B59D /* PrescriptionBuyDrugBottomAlertView.m */; };
+		DDFF4BA821FAE9010009B59D /* UITableViewCell+ShareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4BA721FAE9010009B59D /* UITableViewCell+ShareCell.m */; };
+		DDFF4BAB21FB03020009B59D /* YXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4BAA21FB03020009B59D /* YXAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +96,8 @@
 		DD0ADBB721F5A8BE001D91A4 /* NSArray+AddMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+AddMethod.m"; sourceTree = "<group>"; };
 		DD0ADBB921F5AA65001D91A4 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
 		DD0ADBBA21F5AA68001D91A4 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		DD86857D222E1E0E00775399 /* UIBarButtonItem+TYC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TYC.h"; sourceTree = "<group>"; };
+		DD86857E222E1E0E00775399 /* UIBarButtonItem+TYC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TYC.m"; sourceTree = "<group>"; };
 		DDBB4B5F21E6DCBB00618D86 /* TYCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBB4B6221E6DCBB00618D86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DDBB4B6321E6DCBB00618D86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +149,63 @@
 		DDBB4BE621E756AF00618D86 /* CustomNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationView.m; sourceTree = "<group>"; };
 		DDBB4BE821E759BA00618D86 /* UIImage+AddMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+AddMethod.h"; sourceTree = "<group>"; };
 		DDBB4BE921E759BA00618D86 /* UIImage+AddMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AddMethod.m"; sourceTree = "<group>"; };
+		DDFF4B4D21F6B3100009B59D /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
+		DDFF4B4E21F6B3100009B59D /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
+		DDFF4B4F21F6B3100009B59D /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
+		DDFF4B5021F6B3100009B59D /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
+		DDFF4B5121F6B3100009B59D /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
+		DDFF4B5221F6B3100009B59D /* TZAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
+		DDFF4B5321F6B3100009B59D /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
+		DDFF4B5421F6B3100009B59D /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
+		DDFF4B5521F6B3100009B59D /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		DDFF4B5621F6B3100009B59D /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
+		DDFF4B5721F6B3100009B59D /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
+		DDFF4B5821F6B3100009B59D /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
+		DDFF4B5921F6B3100009B59D /* TZImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
+		DDFF4B5A21F6B3100009B59D /* TZPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
+		DDFF4B5B21F6B3100009B59D /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
+		DDFF4B5C21F6B3100009B59D /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
+		DDFF4B5D21F6B3100009B59D /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
+		DDFF4B5E21F6B3100009B59D /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
+		DDFF4B5F21F6B3100009B59D /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
+		DDFF4B6021F6B3100009B59D /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		DDFF4B6121F6B3100009B59D /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
+		DDFF4B6F21F6B3360009B59D /* FilmPrescriptionUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmPrescriptionUploadViewController.h; sourceTree = "<group>"; };
+		DDFF4B7021F6B3360009B59D /* FilmPrescriptionUploadDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmPrescriptionUploadDetailViewController.m; sourceTree = "<group>"; };
+		DDFF4B7121F6B3360009B59D /* FilmPrescriptionUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmPrescriptionUploadViewController.m; sourceTree = "<group>"; };
+		DDFF4B7221F6B3360009B59D /* FilmPrescriptionUploadDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmPrescriptionUploadDetailViewController.h; sourceTree = "<group>"; };
+		DDFF4B7421F6B3360009B59D /* CustomPrescriptionUploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPrescriptionUploadManager.m; sourceTree = "<group>"; };
+		DDFF4B7521F6B3360009B59D /* SectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionModel.h; sourceTree = "<group>"; };
+		DDFF4B7621F6B3360009B59D /* SectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionModel.m; sourceTree = "<group>"; };
+		DDFF4B7721F6B3360009B59D /* CustomPrescriptionUploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPrescriptionUploadManager.h; sourceTree = "<group>"; };
+		DDFF4B7921F6B3360009B59D /* FilmPrescriptionUploadDetailStatuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmPrescriptionUploadDetailStatuCell.m; sourceTree = "<group>"; };
+		DDFF4B7A21F6B3360009B59D /* FilmPrescriptionUploadDetailTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmPrescriptionUploadDetailTableView.h; sourceTree = "<group>"; };
+		DDFF4B7B21F6B3360009B59D /* FilmPrescriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmPrescriptionView.h; sourceTree = "<group>"; };
+		DDFF4B7C21F6B3360009B59D /* FilmPrescriptionUploadOrderHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmPrescriptionUploadOrderHeadView.h; sourceTree = "<group>"; };
+		DDFF4B7D21F6B3360009B59D /* FilmPrescriptionUploadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmPrescriptionUploadView.m; sourceTree = "<group>"; };
+		DDFF4B7E21F6B3360009B59D /* FilmPrescriptionUploadSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmPrescriptionUploadSectionCell.h; sourceTree = "<group>"; };
+		DDFF4B7F21F6B3360009B59D /* TYCTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYCTestCell.m; sourceTree = "<group>"; };
+		DDFF4B8021F6B3360009B59D /* FilmPrescriptionUploadDetailStatuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmPrescriptionUploadDetailStatuCell.h; sourceTree = "<group>"; };
+		DDFF4B8121F6B3360009B59D /* FilmPrescriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmPrescriptionView.m; sourceTree = "<group>"; };
+		DDFF4B8221F6B3360009B59D /* FilmPrescriptionUploadDetailTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmPrescriptionUploadDetailTableView.m; sourceTree = "<group>"; };
+		DDFF4B8321F6B3360009B59D /* FilmPrescriptionUploadOrderHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmPrescriptionUploadOrderHeadView.m; sourceTree = "<group>"; };
+		DDFF4B8421F6B3360009B59D /* TYCTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYCTestCell.h; sourceTree = "<group>"; };
+		DDFF4B8521F6B3360009B59D /* FilmPrescriptionUploadSectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilmPrescriptionUploadSectionCell.m; sourceTree = "<group>"; };
+		DDFF4B8621F6B3360009B59D /* FilmPrescriptionUploadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilmPrescriptionUploadView.h; sourceTree = "<group>"; };
+		DDFF4B9721FADBBB0009B59D /* BaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		DDFF4B9821FADBBB0009B59D /* BaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		DDFF4B9A21FADCED0009B59D /* UIViewUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewUtil.h; sourceTree = "<group>"; };
+		DDFF4B9B21FADCED0009B59D /* UIViewUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewUtil.m; sourceTree = "<group>"; };
+		DDFF4B9D21FAE02C0009B59D /* FooterButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FooterButtonView.h; sourceTree = "<group>"; };
+		DDFF4B9E21FAE02C0009B59D /* FooterButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FooterButtonView.m; sourceTree = "<group>"; };
+		DDFF4BA021FAE57F0009B59D /* UIViewTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewTools.m; sourceTree = "<group>"; };
+		DDFF4BA121FAE57F0009B59D /* UIViewTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewTools.h; sourceTree = "<group>"; };
+		DDFF4BA321FAE8400009B59D /* PrescriptionBuyDrugBottomAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrescriptionBuyDrugBottomAlertView.h; sourceTree = "<group>"; };
+		DDFF4BA421FAE8400009B59D /* PrescriptionBuyDrugBottomAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrescriptionBuyDrugBottomAlertView.m; sourceTree = "<group>"; };
+		DDFF4BA621FAE9010009B59D /* UITableViewCell+ShareCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+ShareCell.h"; sourceTree = "<group>"; };
+		DDFF4BA721FAE9010009B59D /* UITableViewCell+ShareCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+ShareCell.m"; sourceTree = "<group>"; };
+		DDFF4BA921FB03010009B59D /* YXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXAlertView.h; sourceTree = "<group>"; };
+		DDFF4BAA21FB03020009B59D /* YXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +389,7 @@
 		DDBB4B9D21E6E0AA00618D86 /* MyKit */ = {
 			isa = PBXGroup;
 			children = (
+				DDFF4B4B21F6B2E90009B59D /* ThirdPart */,
 				DDBB4B9E21E6E0AA00618D86 /* Tools */,
 				DDBB4B9F21E6E0AA00618D86 /* Extension */,
 				DDBB4BA021E6E0AA00618D86 /* Category */,
@@ -312,8 +402,12 @@
 			children = (
 				DDBB4BBE21E6F49300618D86 /* UIViewExt.h */,
 				DDBB4BBD21E6F49300618D86 /* UIViewExt.m */,
+				DDFF4BA121FAE57F0009B59D /* UIViewTools.h */,
+				DDFF4BA021FAE57F0009B59D /* UIViewTools.m */,
 				DDBB4BD321E724F300618D86 /* TNetworking.h */,
 				DDBB4BD421E724F300618D86 /* TNetworking.m */,
+				DDFF4BA921FB03010009B59D /* YXAlertView.h */,
+				DDFF4BAA21FB03020009B59D /* YXAlertView.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -348,6 +442,7 @@
 		DDBB4BA121E6E0AA00618D86 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				DDFF4B6D21F6B3360009B59D /* FilmPrescriptionUpload */,
 				DDBB4BA221E6E0AA00618D86 /* Models */,
 				DDBB4BA321E6E0AA00618D86 /* Controllers */,
 				DDBB4BA421E6E0AA00618D86 /* Views */,
@@ -441,8 +536,109 @@
 				DDBB4BDA21E738A800618D86 /* CustomBarButton.m */,
 				DDBB4BE521E756AF00618D86 /* CustomNavigationView.h */,
 				DDBB4BE621E756AF00618D86 /* CustomNavigationView.m */,
+				DDFF4B9721FADBBB0009B59D /* BaseCell.h */,
+				DDFF4B9821FADBBB0009B59D /* BaseCell.m */,
+				DDFF4B9A21FADCED0009B59D /* UIViewUtil.h */,
+				DDFF4B9B21FADCED0009B59D /* UIViewUtil.m */,
+				DDFF4B9D21FAE02C0009B59D /* FooterButtonView.h */,
+				DDFF4B9E21FAE02C0009B59D /* FooterButtonView.m */,
+				DDFF4BA321FAE8400009B59D /* PrescriptionBuyDrugBottomAlertView.h */,
+				DDFF4BA421FAE8400009B59D /* PrescriptionBuyDrugBottomAlertView.m */,
+				DDFF4BA621FAE9010009B59D /* UITableViewCell+ShareCell.h */,
+				DDFF4BA721FAE9010009B59D /* UITableViewCell+ShareCell.m */,
+				DD86857D222E1E0E00775399 /* UIBarButtonItem+TYC.h */,
+				DD86857E222E1E0E00775399 /* UIBarButtonItem+TYC.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DDFF4B4B21F6B2E90009B59D /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF4B4C21F6B3100009B59D /* TZImagePickerController */,
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		DDFF4B4C21F6B3100009B59D /* TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF4B4D21F6B3100009B59D /* TZPhotoPreviewCell.h */,
+				DDFF4B4E21F6B3100009B59D /* TZPhotoPickerController.h */,
+				DDFF4B4F21F6B3100009B59D /* TZImageManager.h */,
+				DDFF4B5021F6B3100009B59D /* TZAssetCell.m */,
+				DDFF4B5121F6B3100009B59D /* TZVideoPlayerController.m */,
+				DDFF4B5221F6B3100009B59D /* TZAssetModel.m */,
+				DDFF4B5321F6B3100009B59D /* NSBundle+TZImagePicker.m */,
+				DDFF4B5421F6B3100009B59D /* TZImagePickerController.h */,
+				DDFF4B5521F6B3100009B59D /* UIView+Layout.m */,
+				DDFF4B5621F6B3100009B59D /* TZPhotoPreviewController.m */,
+				DDFF4B5721F6B3100009B59D /* TZImagePickerController.bundle */,
+				DDFF4B5821F6B3100009B59D /* TZAssetCell.h */,
+				DDFF4B5921F6B3100009B59D /* TZImageManager.m */,
+				DDFF4B5A21F6B3100009B59D /* TZPhotoPickerController.m */,
+				DDFF4B5B21F6B3100009B59D /* TZPhotoPreviewCell.m */,
+				DDFF4B5C21F6B3100009B59D /* NSBundle+TZImagePicker.h */,
+				DDFF4B5D21F6B3100009B59D /* TZAssetModel.h */,
+				DDFF4B5E21F6B3100009B59D /* TZVideoPlayerController.h */,
+				DDFF4B5F21F6B3100009B59D /* TZPhotoPreviewController.h */,
+				DDFF4B6021F6B3100009B59D /* UIView+Layout.h */,
+				DDFF4B6121F6B3100009B59D /* TZImagePickerController.m */,
+			);
+			path = TZImagePickerController;
+			sourceTree = "<group>";
+		};
+		DDFF4B6D21F6B3360009B59D /* FilmPrescriptionUpload */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF4B6E21F6B3360009B59D /* Controller */,
+				DDFF4B7321F6B3360009B59D /* Model */,
+				DDFF4B7821F6B3360009B59D /* View */,
+			);
+			path = FilmPrescriptionUpload;
+			sourceTree = "<group>";
+		};
+		DDFF4B6E21F6B3360009B59D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF4B6F21F6B3360009B59D /* FilmPrescriptionUploadViewController.h */,
+				DDFF4B7021F6B3360009B59D /* FilmPrescriptionUploadDetailViewController.m */,
+				DDFF4B7221F6B3360009B59D /* FilmPrescriptionUploadDetailViewController.h */,
+				DDFF4B7121F6B3360009B59D /* FilmPrescriptionUploadViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DDFF4B7321F6B3360009B59D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF4B7721F6B3360009B59D /* CustomPrescriptionUploadManager.h */,
+				DDFF4B7421F6B3360009B59D /* CustomPrescriptionUploadManager.m */,
+				DDFF4B7521F6B3360009B59D /* SectionModel.h */,
+				DDFF4B7621F6B3360009B59D /* SectionModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDFF4B7821F6B3360009B59D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDFF4B8621F6B3360009B59D /* FilmPrescriptionUploadView.h */,
+				DDFF4B7D21F6B3360009B59D /* FilmPrescriptionUploadView.m */,
+				DDFF4B7B21F6B3360009B59D /* FilmPrescriptionView.h */,
+				DDFF4B8121F6B3360009B59D /* FilmPrescriptionView.m */,
+				DDFF4B8421F6B3360009B59D /* TYCTestCell.h */,
+				DDFF4B7F21F6B3360009B59D /* TYCTestCell.m */,
+				DDFF4B7A21F6B3360009B59D /* FilmPrescriptionUploadDetailTableView.h */,
+				DDFF4B8221F6B3360009B59D /* FilmPrescriptionUploadDetailTableView.m */,
+				DDFF4B8021F6B3360009B59D /* FilmPrescriptionUploadDetailStatuCell.h */,
+				DDFF4B7921F6B3360009B59D /* FilmPrescriptionUploadDetailStatuCell.m */,
+				DDFF4B7C21F6B3360009B59D /* FilmPrescriptionUploadOrderHeadView.h */,
+				DDFF4B8321F6B3360009B59D /* FilmPrescriptionUploadOrderHeadView.m */,
+				DDFF4B7E21F6B3360009B59D /* FilmPrescriptionUploadSectionCell.h */,
+				DDFF4B8521F6B3360009B59D /* FilmPrescriptionUploadSectionCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -551,6 +747,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDBB4B6F21E6DCBF00618D86 /* LaunchScreen.storyboard in Resources */,
+				DDFF4B6821F6B3100009B59D /* TZImagePickerController.bundle in Resources */,
 				DDBB4B6C21E6DCBF00618D86 /* Assets.xcassets in Resources */,
 				DDBB4B6A21E6DCBB00618D86 /* Main.storyboard in Resources */,
 			);
@@ -624,10 +821,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDFF4B6A21F6B3100009B59D /* TZPhotoPickerController.m in Sources */,
+				DDFF4B8B21F6B3360009B59D /* FilmPrescriptionUploadDetailStatuCell.m in Sources */,
 				DDBB4BBF21E6F49300618D86 /* UIViewExt.m in Sources */,
+				DDFF4B8F21F6B3360009B59D /* FilmPrescriptionUploadDetailTableView.m in Sources */,
+				DDFF4B8C21F6B3360009B59D /* FilmPrescriptionUploadView.m in Sources */,
+				DDFF4B9F21FAE02C0009B59D /* FooterButtonView.m in Sources */,
+				DDFF4B8D21F6B3360009B59D /* TYCTestCell.m in Sources */,
+				DDFF4B6B21F6B3100009B59D /* TZPhotoPreviewCell.m in Sources */,
+				DDFF4B9C21FADCED0009B59D /* UIViewUtil.m in Sources */,
 				DDBB4BE421E7561800618D86 /* CenterViewController.m in Sources */,
+				DDFF4B6321F6B3100009B59D /* TZVideoPlayerController.m in Sources */,
 				DDBB4BC521E6F63D00618D86 /* HomePageViewController.m in Sources */,
 				DDBB4B6721E6DCBB00618D86 /* ViewController.m in Sources */,
+				DD86857F222E1E0E00775399 /* UIBarButtonItem+TYC.m in Sources */,
+				DDFF4B6C21F6B3100009B59D /* TZImagePickerController.m in Sources */,
+				DDFF4B8721F6B3360009B59D /* FilmPrescriptionUploadDetailViewController.m in Sources */,
 				DDBB4BC221E6F4C900618D86 /* UIView+TYCViewController.m in Sources */,
 				DDBB4BC821E6F64B00618D86 /* MineViewController.m in Sources */,
 				DDBB4BB021E6E15D00618D86 /* BaseViewController.m in Sources */,
@@ -635,17 +844,34 @@
 				DDBB4BD021E7200E00618D86 /* Constant.m in Sources */,
 				DDBB4BDB21E738A800618D86 /* CustomBarButton.m in Sources */,
 				DDBB4BE721E756AF00618D86 /* CustomNavigationView.m in Sources */,
+				DDFF4B9921FADBBB0009B59D /* BaseCell.m in Sources */,
+				DDFF4BA821FAE9010009B59D /* UITableViewCell+ShareCell.m in Sources */,
+				DDFF4B6421F6B3100009B59D /* TZAssetModel.m in Sources */,
+				DDFF4B6921F6B3100009B59D /* TZImageManager.m in Sources */,
 				DD0ADB6221F57B4A001D91A4 /* NSString+AddMethod.m in Sources */,
+				DDFF4B8E21F6B3360009B59D /* FilmPrescriptionView.m in Sources */,
+				DDFF4B8821F6B3360009B59D /* FilmPrescriptionUploadViewController.m in Sources */,
+				DDFF4B9121F6B3360009B59D /* FilmPrescriptionUploadSectionCell.m in Sources */,
+				DDFF4B6621F6B3100009B59D /* UIView+Layout.m in Sources */,
+				DDFF4B6721F6B3100009B59D /* TZPhotoPreviewController.m in Sources */,
 				DDBB4BAD21E6E13800618D86 /* BaseNavgationViewController.m in Sources */,
+				DDFF4B9021F6B3360009B59D /* FilmPrescriptionUploadOrderHeadView.m in Sources */,
+				DDFF4BAB21FB03020009B59D /* YXAlertView.m in Sources */,
 				DDBB4BEA21E759BA00618D86 /* UIImage+AddMethod.m in Sources */,
 				DDBB4BB321E6E1AA00618D86 /* BaseTabBarViewController.m in Sources */,
 				DD0ADBBD21F5AA69001D91A4 /* UITextView+Placeholder.m in Sources */,
 				DDBB4B7221E6DCBF00618D86 /* main.m in Sources */,
+				DDFF4B6221F6B3100009B59D /* TZAssetCell.m in Sources */,
+				DDFF4B6521F6B3100009B59D /* NSBundle+TZImagePicker.m in Sources */,
+				DDFF4BA221FAE57F0009B59D /* UIViewTools.m in Sources */,
 				DDBB4BE121E73DAB00618D86 /* AppDelegate+rd3.m in Sources */,
 				DD0ADB6B21F5990A001D91A4 /* UILabel+AddMethod.m in Sources */,
 				DD0ADBB821F5A8BE001D91A4 /* NSArray+AddMethod.m in Sources */,
+				DDFF4BA521FAE8400009B59D /* PrescriptionBuyDrugBottomAlertView.m in Sources */,
 				DDBB4BD521E724F300618D86 /* TNetworking.m in Sources */,
+				DDFF4B8921F6B3360009B59D /* CustomPrescriptionUploadManager.m in Sources */,
 				DDBB4B6421E6DCBB00618D86 /* AppDelegate.m in Sources */,
+				DDFF4B8A21F6B3360009B59D /* SectionModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

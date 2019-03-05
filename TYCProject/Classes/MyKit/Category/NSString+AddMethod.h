@@ -76,6 +76,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 //********************************************文本尺寸*****************************************************//
+-(CGSize)getStringSizeWithFont:(UIFont *)font;
++(CGSize)getStringSizeWithFont:(UIFont *)font;
+
+-(CGSize)getStringSizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size;
+
+-(CGSize)getStringSizeWithAttribute:(NSDictionary *)attribute constrainedToSize:(CGSize)size;
+-(CGSize)getStringSizeWithAttribute:(NSDictionary *)attribute;
++(CGSize)getStringSizeWithAttribute:(NSDictionary *)attribute constrainedToSize:(CGSize)size;
+
 /**
  计算宽高
 

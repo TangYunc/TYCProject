@@ -88,7 +88,7 @@
     BaseNavgationViewController *nav = [[BaseNavgationViewController alloc] initWithRootViewController:childVc];
     [self addChildViewController:nav];
     
-    [self.customTabBar  addTabBarButton:childVc.tabBarItem];
+    [self.customTabBar addTabBarButton:childVc.tabBarItem];
     
 }
 

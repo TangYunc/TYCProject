@@ -225,6 +225,51 @@
 
 
 //********************************************文本尺寸*****************************************************//
+-(CGSize)getStringSizeWithFont:(UIFont *)font{
+    
+    CGSize size ;
+    if(isIOS6){
+        size = [self sizeWithFont:font];
+    }else{
+        size = [self sizeWithAttributes:@{NSFontAttributeName:font}];
+    }
+    return size;
+    
+}
+
++(CGSize)getStringSizeWithFont:(UIFont *)font{
+    return [[NSString string]getStringSizeWithFont:font];
+}
+
+-(CGSize)getStringSizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size{
+    
+    CGSize resultSize ;
+    if(isIOS6){
+        resultSize = [self sizeWithFont:font constrainedToSize:size];
+    }else{
+        resultSize = [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil ].size;
+    }
+    return resultSize;
+    
+}
+
+-(CGSize)getStringSizeWithAttribute:(NSDictionary *)attribute constrainedToSize:(CGSize)size{
+    CGSize resultSize ;
+    
+    resultSize = [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:attribute context:nil ].size;
+    return resultSize;
+}
+
+-(CGSize)getStringSizeWithAttribute:(NSDictionary *)attribute
+{
+    CGSize size = [self sizeWithAttributes:attribute];
+    return size;
+}
+
++(CGSize)getStringSizeWithAttribute:(NSDictionary *)attribute constrainedToSize:(CGSize)size{
+    return [[NSString new]getStringSizeWithAttribute:attribute constrainedToSize:size];
+}
+
 - (CGSize)calculatlabelWidthLabelWidth:(CGFloat)labelWidth labelHeight:(CGFloat)labelHeight font:(UIFont *)font isWidth:(BOOL)isWidth{
     CGSize size = CGSizeMake(0, 0);
     

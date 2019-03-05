@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    
+    self.isHiddenShadowLine = YES;
     self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
@@ -32,7 +32,7 @@
     [self.navigationController.navigationBar setBackgroundImage:[UIImage generateImageFromColor:[UIColor clearColor]] forBarMetrics:UIBarMetricsDefault];
     
     // 去掉下划线
-    [self hideNavigationBarShadowLine:YES];
+    [self hideNavigationBarShadowLine:self.isHiddenShadowLine];
     
     NSArray *viewControllers = self.navigationController.viewControllers;
     
@@ -109,6 +109,88 @@
             self.navigationItem.leftBarButtonItem = nil;
         }
     }
+}
+
+-(UIButton *)rigthItemButton{
+    if (!_rigthItemButton) {
+        _rigthItemButton = [UIViewUtil creatButtonWithFrame:CGRectMake(0, 0, KFloat(60), 44) font:kSystemFitFont(15) title:nil titleColor:RGB_COLOR_WITH_0x(kBlackTextColor) bgNormalImage:nil bgHightLightImage:nil];
+        [_rigthItemButton setTitleColor:RGB_COLOR_WITH_0x(kBlackText999Color) forState:UIControlStateSelected];
+        _rigthItemButton.exclusiveTouch = YES;
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:self.rigthItemButton];
+    }
+    return _rigthItemButton;
+}
+
+-(void)setNavigationRigthItemTitle:(NSString *)title itemImage:(UIImage *)image action:(SEL)action
+{
+    if (image) {//有图
+        [self.rigthItemButton setImage:image forState:UIControlStateNormal];
+        if (title&&![title isEqualToString:@""]) {//有图有字
+            CGSize size = [title getStringSizeWithFont:kSystemFitFont(17)];
+            [self.rigthItemButton setTitle:title forState:UIControlStateNormal];
+            if (size.width+image.size.width>self.rigthItemButton.width) {
+                self.rigthItemButton.width = size.width+image.size.width;
+            }
+            self.rigthItemButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -(self.rigthItemButton.width-image.size.width-size.width));
+            self.rigthItemButton.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, self.rigthItemButton.width-size.width-image.size.width);
+        }else{//有图无字
+            self.rigthItemButton.imageEdgeInsets = UIEdgeInsetsMake(0, self.rigthItemButton.width-image.size.width, 0, 0);
+        }
+        if (action) {
+            [self.rigthItemButton addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+        }
+    }else{//没图
+        if (title&&![title isEqualToString:@""]) {//没图有字
+            CGSize size = [title getStringSizeWithFont:kSystemFitFont(17)];
+            [self.rigthItemButton setTitle:title forState:UIControlStateNormal];
+            if (size.width>self.rigthItemButton.width) {
+                self.rigthItemButton.width = size.width;
+            }
+            self.rigthItemButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -(self.rigthItemButton.width-size.width));
+            if (action) {
+                [self.rigthItemButton addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+            }
+        }else{//没图无字
+            return;
+        }
+    }
+}
+
+- (void)viewColorChangeFromCoror:(UIColor *)fromColor toColor:(UIColor *)toColor withTheView:(UIView *)view{
+    
+    //初始化CAGradientlayer对象，使它的大小为UIView的大小
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = view.bounds;
+    
+    //将CAGradientlayer对象添加在我们要设置背景色的视图的layer层
+    [view.layer addSublayer:gradientLayer];
+    
+    //设置渐变区域的起始和终止位置（范围为0-1）
+    gradientLayer.startPoint = CGPointMake(0, 0);
+    gradientLayer.endPoint = CGPointMake(0, 1);
+    
+    //设置颜色数组
+    gradientLayer.colors = @[(__bridge id)fromColor.CGColor,
+                             (__bridge id)toColor.CGColor];
+    
+    //设置颜色分割点（范围：0-1）
+    gradientLayer.locations = @[@(0.4f), @(1.0f)];
+}
+//视图转换为UILabel
+- (UIImage*)imageWithUIView:(UIView*)view withSize:(CGSize)size
+{
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+    //        UIGraphicsBeginImageContext(view.bounds.size);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    [view.layer renderInContext:ctx];
+    UIImage* tImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return tImage;
+}
+
+
+-(void)setNavigationRigthItemTitle:(NSString *)title itemImage:(UIImage *)image{
+    [self setNavigationRigthItemTitle:title itemImage:image action:nil];
 }
 
 #pragma mark -设置导航栏标题
