@@ -69,6 +69,36 @@ NS_ASSUME_NONNULL_BEGIN
 // 传递一个字符串数组，可以染不同的颜色，后期有需要可以把 color 和 font 也已数组的形式传递，配对使用
 -(NSMutableAttributedString *)setAttributedWithIdentifyStringArray:(NSArray *)identifyStringArray color:(UIColor *)color font:(UIFont *)font;
 
+#pragma mark 改变label的文本的两种以上颜色及字体
+
+/**
+ 
+ iOS改变UILabel的多种颜色和字体大小
+ 
+ @param strArray   需要改变的字符串 数组
+ 
+ @param colorArray 需要改变的颜色 数组
+ 
+ @param fontArray  需要改变的字体 数组
+ 
+ 注意：需要改变的字符串（颜色、字体）按数组顺序排列
+ 
+ 字符串1颜色1字体1、
+ 
+ 字符串2颜色2字体2...一一对应，具体效果，测试案例便可知晓
+ 
+ */
+- (NSMutableAttributedString *)changeTextLab:(UILabel *)myLabel
+
+          stringArray:(NSArray *)strArray
+
+           colorArray:(NSArray *)colorArray
+
+            fontArray:(NSArray *)fontArray;
+
+//获取字符串中多个相同字符串的所有range
+- (NSArray<NSValue *> *)getRangeStrArrWithInitialText:(NSString*)initialText regexString:(NSString*)regexString;
+
 // 获取行间距类型
 +(NSDictionary *)getAttributeWithlineSpacing:(CGFloat)lineSpacing font:(UIFont *)font;
 // 获取行间距类型
@@ -95,6 +125,7 @@ NS_ASSUME_NONNULL_BEGIN
  @return CGSize
  */
 - (CGSize)calculatlabelWidthLabelWidth:(CGFloat)labelWidth labelHeight:(CGFloat)labelHeight font:(UIFont *)font isWidth:(BOOL)isWidth;
+
 
 @end
 

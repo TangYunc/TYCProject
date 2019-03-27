@@ -202,6 +202,57 @@
     return attributedStr;
 }
 
+//价格：¥300.66
+- (NSMutableAttributedString *)changeTextContent:(NSString *)textContent
+
+          stringArray:(NSArray *)strArray
+
+           colorArray:(NSArray *)colorArray
+
+            fontArray:(NSArray *)fontArray {
+    
+    NSMutableAttributedString *mutAttStr = [[NSMutableAttributedString alloc] initWithString:textContent];
+    
+    NSString *str = nil;
+    
+    UIFont *font = nil;
+    
+    NSRange range = NSMakeRange(0, 0);
+    
+    for (NSInteger i = 0; i < strArray.count; i++) {
+        
+        //NSLog(@"---> strArray.count = %ld",strArray.count);
+        
+        str = strArray[i];
+        
+        NSUInteger location = [[mutAttStr string] rangeOfString:str].location;
+        
+        NSUInteger length   = [[mutAttStr string] rangeOfString:str].length;
+        
+        range = NSMakeRange(location, length);
+        
+        // 改变颜色
+        
+        if (colorArray.count >= (i+1)) {
+            
+            [mutAttStr addAttribute:NSForegroundColorAttributeName value:colorArray[i] range:range];
+            
+        }
+        
+        // 改变字体大小
+        
+        if (fontArray.count >= (i+1)) {
+            
+            font = [UIFont systemFontOfSize:[fontArray[i] floatValue]];
+            
+            [mutAttStr addAttribute:NSFontAttributeName value:font range:range];
+            
+        }
+        
+    }
+    return mutAttStr;
+}
+
 +(NSDictionary *)getAttributeWithlineSpacing:(CGFloat)lineSpacing font:(UIFont *)font{
     return [self getAttributeWithlineSpacing:lineSpacing alignment:NSTextAlignmentLeft font:font];
 }
@@ -272,7 +323,6 @@
 
 - (CGSize)calculatlabelWidthLabelWidth:(CGFloat)labelWidth labelHeight:(CGFloat)labelHeight font:(UIFont *)font isWidth:(BOOL)isWidth{
     CGSize size = CGSizeMake(0, 0);
-    
     if (isWidth) {
         //求宽
         size = CGSizeMake(MAXFLOAT, labelHeight);
@@ -280,10 +330,69 @@
         //求高
         size = CGSizeMake(labelWidth, MAXFLOAT);
     }
-    CGSize labelSize = [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil].size;
+    CGSize labelSize = [self boundingRectWithSize:size options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil].size;
+    //MARK:因为涉及到界面适配，所以难免出现小数，这时候采用四舍五入并且加1可以防止小数问题
+    labelSize = CGSizeMake(labelSize.width + 1, labelSize.height + 1);
     return labelSize;
 }
 
+- (NSArray<NSValue *> *)getRangeStrArrWithInitialText:(NSString*)initialText regexString:(NSString*)regexString{
+    /*
+     备注：1、array中存的是N个字典，每个字典中存了两个值：子串、子串位置，结构如下图
+     2、字典中的range是NSValue，需要转换成NSRange使用
+     (
+     {
+     subString = "我是TYC要改变的字符串";
+     subStringRange = "NSRange: {6, 20}";
+     }
+     ）
+     */
+    NSMutableArray *tempMArr = [NSMutableArray array];
+    [self searchAllTextRangeWithInitialArray:tempMArr initialText:initialText regexString:regexString];
+    NSMutableArray *resultMArr = [NSMutableArray array];
+    for (NSDictionary *tempDic in tempMArr) {
+        NSValue *rangeValue = tempDic[@"subStringRange"];
+        [resultMArr addObject:rangeValue];
+    }
+    return resultMArr;
+}
 
+- (void)searchAllTextRangeWithInitialArray:(NSMutableArray*)initialArray initialText:(NSString*)initialText regexString:(NSString*)regexString{
+    //思路：通过循环，搜索到第一个之后，先把第一个的信息打包成字典存进数组，再次搜索，把上次的信息字典取出来，根据上一个位置信息，把主串截取为在那之后的串，记录新串的头字符在主串中的位置，在新串中再次搜索，搜索到的range的location需要加上新串的头字符在主串中的位置，打包信息存进数组，再次搜索，直到搜索不到信息。
+    if (initialArray.count == 0) {//如果此时传入的array是空
+        NSRange range = [initialText rangeOfString:regexString options:NSRegularExpressionSearch];
+        if (range.location != NSNotFound) {
+            //包装字典，存进数组
+            NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+            dict[@"subString"] = [initialText substringWithRange:range];
+            dict[@"subStringRange"] = [NSValue valueWithRange:range];
+            [initialArray addObject:dict];
+            //递归调用
+            [self searchAllTextRangeWithInitialArray:initialArray initialText:initialText regexString:regexString];
+        }else{
+            return;
+        }
+    }else{//如果数组中已经有值了
+        //1、取数组中最后一个字典，记录后串在原串中的起始位置，把该串及其之前的串去掉生成新串
+        NSMutableDictionary *lastDict = [initialArray lastObject];
+        NSRange lastRange = [lastDict[@"subStringRange"] rangeValue];
+        NSUInteger newStringBeginLocation = lastRange.location +  lastRange.length;
+        NSString *newString = [initialText substringFromIndex:newStringBeginLocation];
+        //2、在新串中找符合的子串，如果找到，包装存进数组
+        NSRange rangeInNewString = [newString rangeOfString:regexString options:NSRegularExpressionSearch];
+        if(rangeInNewString.location != NSNotFound) {
+            //包装字典，存进数组
+            NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+            dict[@"subString"] = [newString substringWithRange:rangeInNewString];
+            NSRange rangeIninitialText = NSMakeRange(rangeInNewString.location + newStringBeginLocation, rangeInNewString.length);
+            dict[@"subStringRange"] = [NSValue valueWithRange:rangeIninitialText];
+            [initialArray addObject:dict];
+            //递归调用
+            [self searchAllTextRangeWithInitialArray:initialArray initialText:initialText regexString:regexString];
+        }else{
+            return;
+        }
+    }
+}
 
 @end

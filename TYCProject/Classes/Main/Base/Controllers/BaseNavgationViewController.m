@@ -82,7 +82,7 @@
     
     UINavigationBar *navBar = [UINavigationBar appearance];
     
-    UIView *theBJViwe = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 64)];
+    UIView *theBJViwe = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kNavigationBarHeight)];
     [self viewColorChangeFromCoror:UIColorFromRGBA(250, 59, 37, 1.0) toColor:UIColorFromRGBA(229, 1, 18, 1.0) withTheView:theBJViwe];
     UIImage *colorImage = [self imageWithUIView:theBJViwe];
     [navBar setBackgroundImage:colorImage forBarMetrics:UIBarMetricsDefault];
