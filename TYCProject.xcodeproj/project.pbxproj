@@ -12,6 +12,8 @@
 		DD0ADB6B21F5990A001D91A4 /* UILabel+AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADB6A21F5990A001D91A4 /* UILabel+AddMethod.m */; };
 		DD0ADBB821F5A8BE001D91A4 /* NSArray+AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADBB721F5A8BE001D91A4 /* NSArray+AddMethod.m */; };
 		DD0ADBBD21F5AA69001D91A4 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADBB921F5AA65001D91A4 /* UITextView+Placeholder.m */; };
+		DD5A69D5224B740800AA8BDF /* UILabel+TYCAttributeTextTapAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A69D1224B740800AA8BDF /* UILabel+TYCAttributeTextTapAction.m */; };
+		DD5A69D6224B740800AA8BDF /* RunTimeGetAllIvarAndProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A69D4224B740800AA8BDF /* RunTimeGetAllIvarAndProperty.m */; };
 		DD86857F222E1E0E00775399 /* UIBarButtonItem+TYC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD86857E222E1E0E00775399 /* UIBarButtonItem+TYC.m */; };
 		DDBB4B6421E6DCBB00618D86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4B6321E6DCBB00618D86 /* AppDelegate.m */; };
 		DDBB4B6721E6DCBB00618D86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4B6621E6DCBB00618D86 /* ViewController.m */; };
@@ -96,6 +98,10 @@
 		DD0ADBB721F5A8BE001D91A4 /* NSArray+AddMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+AddMethod.m"; sourceTree = "<group>"; };
 		DD0ADBB921F5AA65001D91A4 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
 		DD0ADBBA21F5AA68001D91A4 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		DD5A69D1224B740800AA8BDF /* UILabel+TYCAttributeTextTapAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TYCAttributeTextTapAction.m"; sourceTree = "<group>"; };
+		DD5A69D2224B740800AA8BDF /* RunTimeGetAllIvarAndProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeGetAllIvarAndProperty.h; sourceTree = "<group>"; };
+		DD5A69D3224B740800AA8BDF /* UILabel+TYCAttributeTextTapAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TYCAttributeTextTapAction.h"; sourceTree = "<group>"; };
+		DD5A69D4224B740800AA8BDF /* RunTimeGetAllIvarAndProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeGetAllIvarAndProperty.m; sourceTree = "<group>"; };
 		DD86857D222E1E0E00775399 /* UIBarButtonItem+TYC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TYC.h"; sourceTree = "<group>"; };
 		DD86857E222E1E0E00775399 /* UIBarButtonItem+TYC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TYC.m"; sourceTree = "<group>"; };
 		DDBB4B5F21E6DCBB00618D86 /* TYCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -435,6 +441,14 @@
 				DD0ADB6A21F5990A001D91A4 /* UILabel+AddMethod.m */,
 				DD0ADBBA21F5AA68001D91A4 /* UITextView+Placeholder.h */,
 				DD0ADBB921F5AA65001D91A4 /* UITextView+Placeholder.m */,
+				DD5A69D2224B740800AA8BDF /* RunTimeGetAllIvarAndProperty.h */,
+				DD5A69D4224B740800AA8BDF /* RunTimeGetAllIvarAndProperty.m */,
+				DD5A69D3224B740800AA8BDF /* UILabel+TYCAttributeTextTapAction.h */,
+				DD5A69D1224B740800AA8BDF /* UILabel+TYCAttributeTextTapAction.m */,
+				DDFF4BA621FAE9010009B59D /* UITableViewCell+ShareCell.h */,
+				DDFF4BA721FAE9010009B59D /* UITableViewCell+ShareCell.m */,
+				DD86857D222E1E0E00775399 /* UIBarButtonItem+TYC.h */,
+				DD86857E222E1E0E00775399 /* UIBarButtonItem+TYC.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -544,10 +558,6 @@
 				DDFF4B9E21FAE02C0009B59D /* FooterButtonView.m */,
 				DDFF4BA321FAE8400009B59D /* PrescriptionBuyDrugBottomAlertView.h */,
 				DDFF4BA421FAE8400009B59D /* PrescriptionBuyDrugBottomAlertView.m */,
-				DDFF4BA621FAE9010009B59D /* UITableViewCell+ShareCell.h */,
-				DDFF4BA721FAE9010009B59D /* UITableViewCell+ShareCell.m */,
-				DD86857D222E1E0E00775399 /* UIBarButtonItem+TYC.h */,
-				DD86857E222E1E0E00775399 /* UIBarButtonItem+TYC.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -868,10 +878,12 @@
 				DD0ADB6B21F5990A001D91A4 /* UILabel+AddMethod.m in Sources */,
 				DD0ADBB821F5A8BE001D91A4 /* NSArray+AddMethod.m in Sources */,
 				DDFF4BA521FAE8400009B59D /* PrescriptionBuyDrugBottomAlertView.m in Sources */,
+				DD5A69D6224B740800AA8BDF /* RunTimeGetAllIvarAndProperty.m in Sources */,
 				DDBB4BD521E724F300618D86 /* TNetworking.m in Sources */,
 				DDFF4B8921F6B3360009B59D /* CustomPrescriptionUploadManager.m in Sources */,
 				DDBB4B6421E6DCBB00618D86 /* AppDelegate.m in Sources */,
 				DDFF4B8A21F6B3360009B59D /* SectionModel.m in Sources */,
+				DD5A69D5224B740800AA8BDF /* UILabel+TYCAttributeTextTapAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
