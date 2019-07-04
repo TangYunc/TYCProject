@@ -72,6 +72,7 @@
 #define kDocBlueColor 0x0082ef
 #define kBgViewColor 0xf4f4f4
 #define kBlackText999Color 0xb6b7c2
+#define kBlueColor 0x5184f7
 
 
 /// 字体
@@ -84,6 +85,11 @@
 #define kSystemFitFont(__arg__) kSystemFont(isiPhone4||isiPhone5?__arg__-1:(isiPhoneX?__arg__+1:__arg__))
 //粗体适配
 #define kSystemFitBordFont(__arg__) kSystemBordFont(isiPhone4||isiPhone5?__arg__-1:__arg__)
+//正常适配高度
+#define kSystemFitFontHeight(__arg__) (kSystemFitFont(__arg__).pointSize)
+//粗体适配高度
+#define kSystemFitBordFontHeight(__arg__) (kSystemFitBordFont(__arg__).pointSize)
+
 #define IconFont  @"宋体"
 
 

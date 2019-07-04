@@ -34,19 +34,6 @@
     return YES;
 }
 
-#pragma mark -
-#pragma mark 设置导航栏全局样式
-- (void)setUpNavigationBarStyle
-{
-    if (VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
-    {
-        [[UINavigationBar appearance] setTintColor:UIColorFromRGB(0x54, 0x54, 0x54)];
-        [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(248, 248, 249)];
-    }
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:kSystemFont(18), NSForegroundColorAttributeName:UIColorFromRGB(51, 51, 51)}];
-    
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

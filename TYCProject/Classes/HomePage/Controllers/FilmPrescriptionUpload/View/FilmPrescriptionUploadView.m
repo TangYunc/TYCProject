@@ -218,9 +218,9 @@
 }
 
 - (void)keyboardWillShow:(NSNotification *)notification {
-    NSDictionary *userInfo = [notification userInfo];
-    NSValue* value = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
-    CGRect keyboardRect = [value CGRectValue]; // 这里得到了键盘的frame
+//    NSDictionary *userInfo = [notification userInfo];
+//    NSValue* value = [userInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
+//    CGRect keyboardRect = [value CGRectValue]; // 这里得到了键盘的frame
     
 //    __weak typeof(self) weakSelf = self;
 //    [UIView animateWithDuration:0.23 animations:^{

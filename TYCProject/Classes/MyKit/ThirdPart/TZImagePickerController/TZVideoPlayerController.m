@@ -36,18 +36,18 @@
 
 - (void)configMoviePlayer {
     [[TZImageManager manager] getPhotoWithAsset:_model.asset completion:^(UIImage *photo, NSDictionary *info, BOOL isDegraded) {
-        _cover = photo;
+        self->_cover = photo;
     }];
     [[TZImageManager manager] getVideoWithAsset:_model.asset completion:^(AVPlayerItem *playerItem, NSDictionary *info) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            _player = [AVPlayer playerWithPlayerItem:playerItem];
-            AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:_player];
+            self->_player = [AVPlayer playerWithPlayerItem:playerItem];
+            AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:self->_player];
             playerLayer.frame = self.view.bounds;
             [self.view.layer addSublayer:playerLayer];
             [self addProgressObserver];
             [self configPlayButton];
             [self configBottomToolBar];
-            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pausePlayerAndShowNaviBar) name:AVPlayerItemDidPlayToEndTimeNotification object:_player.currentItem];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pausePlayerAndShowNaviBar) name:AVPlayerItemDidPlayToEndTimeNotification object:self->_player.currentItem];
         });
     }];
 }

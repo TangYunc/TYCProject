@@ -18,9 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor yellowColor];
     self.isHiddenShadowLine = YES;
     self.automaticallyAdjustsScrollViewInsets = NO;
+    [self setupNavigationBar];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -156,6 +157,25 @@
     }
 }
 
+- (void)addChildVc:(UIViewController *)childVc {
+    if ([childVc isKindOfClass:[UIViewController class]] == NO) {
+        return ;
+    }
+    [childVc willMoveToParentViewController:self];
+    [self addChildViewController:childVc];
+    [self.view addSubview:childVc.view];
+    childVc.view.frame = self.view.bounds;
+}
+
+- (void)removeChildVc:(UIViewController *)childVc {
+    if ([childVc isKindOfClass:[UIViewController class]] == NO) {
+        return ;
+    }
+    [childVc.view removeFromSuperview];
+    [childVc willMoveToParentViewController:nil];
+    [childVc removeFromParentViewController];
+}
+
 - (void)viewColorChangeFromCoror:(UIColor *)fromColor toColor:(UIColor *)toColor withTheView:(UIView *)view{
     
     //初始化CAGradientlayer对象，使它的大小为UIView的大小
@@ -205,37 +225,51 @@
     [self.navBarView addSubview:titleLabel];
 }
 
-- (void)popAlertViewWithTitle:(NSString *)theTitle Message:(NSString *)message cancelTitle:(NSString *)cancelTitle otherTitle:(NSString *)otherTitle{
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:theTitle message:message preferredStyle:UIAlertControllerStyleAlert];
+/**
+ 冲突提醒弹窗
+ 
+ @param tipTitle 弹窗title
+ @param tipContent 弹窗文本
+ @param changeStr 要调整的字符串
+ @param object 参数
+ */
+- (void)popAlertViewTipTitle:(NSString *)tipTitle withTipContent:(NSString *)tipContent withChangeStr:(NSString *)changeStr withInfoObject:(id)object confirmBlock:(void(^)(void))confirmBlock cancelBlock:(void(^)(void))cancelBlock{
     
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:tipTitle message:tipContent preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"不修改" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        if (self.cancelBlock) {
+            self.cancelBlock = cancelBlock;
+        }
     }];
     
-    UIAlertAction *otherAction = [UIAlertAction actionWithTitle:otherTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    UIAlertAction *otherAction = [UIAlertAction actionWithTitle:@"确定修改" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        if (self.confirmBlock) {
+            self.confirmBlock = confirmBlock;
+        }
     }];
     
     [alertController addAction:cancelAction];
     [alertController addAction:otherAction];
-    NSMutableAttributedString *title = [[NSMutableAttributedString alloc] initWithString:theTitle];
-    [title addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:15] range:NSMakeRange(0, title.length)];
-    [title addAttribute:NSForegroundColorAttributeName value:RGB_COLOR_WITH_0x(kBlackTextColor) range:NSMakeRange(0, title.length)];
-    [alertController setValue:title forKey:@"attributedTitle"];
+    //设置弹窗标题样式
+    //    NSMutableAttributedString *title = [[NSMutableAttributedString alloc] initWithString:tipTitle];
+    //        [title addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:15] range:NSMakeRange(0, title.length)];
+    //    [title addAttribute:NSForegroundColorAttributeName value:RGB_COLOR_WITH_0x(kDocBlueColor) range:NSMakeRange(0, title.length)];
+    //    [alertController setValue:title forKey:@"attributedTitle"];
     
-    if (message.length > 0) {
-        
-        NSMutableAttributedString *subTitle = [[NSMutableAttributedString alloc] initWithString:message];
-        [subTitle addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:14] range:NSMakeRange(0, subTitle.length)];
-        [subTitle addAttribute:NSForegroundColorAttributeName value:[UIColor grayColor] range:NSMakeRange(0, subTitle.length)];
-        [alertController setValue:subTitle forKey:@"attributedMessage"];
+    //设置弹窗内容样式
+    NSMutableAttributedString *subTitle = [[NSMutableAttributedString alloc] initWithString:tipContent];
+    [subTitle addAttribute:NSFontAttributeName value:kSystemFitFont(14) range:NSMakeRange(0, subTitle.length)];
+    [subTitle addAttribute:NSForegroundColorAttributeName value:RGB_COLOR_WITH_0x(kBlackTextColor) range:NSMakeRange(0, subTitle.length)];
+    NSArray *rangeArr = [NSString getRangeStrArrWithInitialText:tipContent regexString:changeStr];
+    for (NSValue *tempValue in rangeArr) {
+        NSRange range = [tempValue rangeValue];
+        [subTitle addAttribute:NSForegroundColorAttributeName value:RGB_COLOR_WITH_0x(kRedColor) range:range];
     }
-    if (@available(iOS 9.0, *)) {
-        UILabel *apperaranceLabel = [UILabel appearanceWhenContainedInInstancesOfClasses:@[UIAlertController.class]];
-        [apperaranceLabel changeFont:[UIFont systemFontOfSize:15]];
-    } else {
-        // Fallback on earlier versions
-    }
+    [alertController setValue:subTitle forKey:@"attributedMessage"];
+    
     [cancelAction setValue:RGB_COLOR_WITH_0x(kBlackTextColor) forKey:@"titleTextColor"];
-    [otherAction setValue:[UIColor blueColor] forKey:@"titleTextColor"];
+    [otherAction setValue:RGB_COLOR_WITH_0x(kDocBlueColor) forKey:@"titleTextColor"];
     
     [self presentViewController:alertController animated:YES completion:nil];
 }

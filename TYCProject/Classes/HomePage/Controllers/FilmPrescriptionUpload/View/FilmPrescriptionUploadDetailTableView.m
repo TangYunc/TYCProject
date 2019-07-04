@@ -70,7 +70,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSInteger section = indexPath.section;
-    NSInteger row = indexPath.row;
     if (!section) {
         FilmPrescriptionUploadDetailStatuCell *cell = [FilmPrescriptionUploadDetailStatuCell  shareCellTableView:tableView reuseIdentifier:@"FilmPrescriptionUploadDetailStatuCell"];
         cell.statu = @"1";

@@ -214,7 +214,7 @@
         [[TZImageManager manager] getCameraRollAlbum:self.allowPickingVideo allowPickingImage:self.allowPickingImage completion:^(TZAlbumModel *model) {
             photoPickerVc.model = model;
             [self pushViewController:photoPickerVc animated:YES];
-            _didPushPhotoPickerVc = YES;
+            self->_didPushPhotoPickerVc = YES;
         }];
     }
 }
@@ -411,22 +411,22 @@
 - (void)configTableView {
     TZImagePickerController *imagePickerVc = (TZImagePickerController *)self.navigationController;
     [[TZImageManager manager] getAllAlbums:imagePickerVc.allowPickingVideo allowPickingImage:imagePickerVc.allowPickingImage completion:^(NSArray<TZAlbumModel *> *models) {
-        _albumArr = [NSMutableArray arrayWithArray:models];
-        for (TZAlbumModel *albumModel in _albumArr) {
+        self->_albumArr = [NSMutableArray arrayWithArray:models];
+        for (TZAlbumModel *albumModel in self->_albumArr) {
             albumModel.selectedModels = imagePickerVc.selectedModels;
         }
-        if (!_tableView) {
+        if (!self->_tableView) {
             CGFloat top = kNavigationBarHeight;
             if (iOS7Later) top += kStatusBarHeigth;
-            _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, top, self.view.tz_width, self.view.tz_height - top) style:UITableViewStylePlain];
-            _tableView.rowHeight = 70;
-            _tableView.tableFooterView = [[UIView alloc] init];
-            _tableView.dataSource = self;
-            _tableView.delegate = self;
-            [_tableView registerClass:[TZAlbumCell class] forCellReuseIdentifier:@"TZAlbumCell"];
-            [self.view addSubview:_tableView];
+            self->_tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, top, self.view.tz_width, self.view.tz_height - top) style:UITableViewStylePlain];
+            self->_tableView.rowHeight = 70;
+            self->_tableView.tableFooterView = [[UIView alloc] init];
+            self->_tableView.dataSource = self;
+            self->_tableView.delegate = self;
+            [self->_tableView registerClass:[TZAlbumCell class] forCellReuseIdentifier:@"TZAlbumCell"];
+            [self.view addSubview:self->_tableView];
         } else {
-            [_tableView reloadData];
+            [self->_tableView reloadData];
         }
     }];
 }

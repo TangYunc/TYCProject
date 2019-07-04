@@ -33,6 +33,22 @@
     [self setUpNavStyle];
 }
 
+#pragma mark -
+#pragma mark 设置导航栏全局样式
+- (void)setUpNavigationBarStyle
+{
+    if (VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
+    {
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+        [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(248, 248, 249)];
+    }
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:kSystemFont(18), NSForegroundColorAttributeName:UIColorFromRGB(51, 51, 51)}];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+}
+
+
+
 - (UIBarButtonItem *)leftNavigationItem
 {
     return nil;

@@ -12,9 +12,23 @@
 		DD0ADB6B21F5990A001D91A4 /* UILabel+AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADB6A21F5990A001D91A4 /* UILabel+AddMethod.m */; };
 		DD0ADBB821F5A8BE001D91A4 /* NSArray+AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADBB721F5A8BE001D91A4 /* NSArray+AddMethod.m */; };
 		DD0ADBBD21F5AA69001D91A4 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0ADBB921F5AA65001D91A4 /* UITextView+Placeholder.m */; };
+		DD1A27C5225C48A9004547AB /* TitleSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1A27C4225C48A9004547AB /* TitleSegmentViewController.m */; };
+		DD1A27CB225C49BE004547AB /* TitleSegmentSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1A27CA225C49BE004547AB /* TitleSegmentSecondViewController.m */; };
+		DD1A27CE225C49DA004547AB /* TitleSegmentOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1A27CD225C49DA004547AB /* TitleSegmentOneViewController.m */; };
+		DD1A27D1225C4A7F004547AB /* CustomSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1A27D0225C4A7F004547AB /* CustomSegmentView.m */; };
+		DD4F686E22CB6EE4007BFC15 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F686D22CB6EE4007BFC15 /* OpenAL.framework */; };
+		DD4F687022CB6EEF007BFC15 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F686F22CB6EEF007BFC15 /* GLKit.framework */; };
+		DD4F687222CB6EF7007BFC15 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F687122CB6EF6007BFC15 /* AVFoundation.framework */; };
+		DD4F687422CB6EFF007BFC15 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F687322CB6EFF007BFC15 /* libz.tbd */; };
+		DD4F687622CB6F0A007BFC15 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F687522CB6F0A007BFC15 /* libiconv.tbd */; };
+		DD4F687822CB6F18007BFC15 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4F687722CB6F18007BFC15 /* libsqlite3.tbd */; };
 		DD5A69D5224B740800AA8BDF /* UILabel+TYCAttributeTextTapAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A69D1224B740800AA8BDF /* UILabel+TYCAttributeTextTapAction.m */; };
 		DD5A69D6224B740800AA8BDF /* RunTimeGetAllIvarAndProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A69D4224B740800AA8BDF /* RunTimeGetAllIvarAndProperty.m */; };
+		DD5A69DA224CAF6100AA8BDF /* HomePageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A69D9224CAF6100AA8BDF /* HomePageTableView.m */; };
+		DD5A69E0224CB12200AA8BDF /* HomePageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A69DF224CB12200AA8BDF /* HomePageCell.m */; };
+		DD5A69E4224CC48300AA8BDF /* AttributedStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5A69E3224CC48300AA8BDF /* AttributedStringViewController.m */; };
 		DD86857F222E1E0E00775399 /* UIBarButtonItem+TYC.m in Sources */ = {isa = PBXBuildFile; fileRef = DD86857E222E1E0E00775399 /* UIBarButtonItem+TYC.m */; };
+		DD8EFBCF22CCDF82002CA0D6 /* TYCTestBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8EFBCE22CCDF82002CA0D6 /* TYCTestBtn.m */; };
 		DDBB4B6421E6DCBB00618D86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4B6321E6DCBB00618D86 /* AppDelegate.m */; };
 		DDBB4B6721E6DCBB00618D86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4B6621E6DCBB00618D86 /* ViewController.m */; };
 		DDBB4B6A21E6DCBB00618D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBB4B6821E6DCBB00618D86 /* Main.storyboard */; };
@@ -38,6 +52,8 @@
 		DDBB4BE421E7561800618D86 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BE321E7561800618D86 /* CenterViewController.m */; };
 		DDBB4BE721E756AF00618D86 /* CustomNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BE621E756AF00618D86 /* CustomNavigationView.m */; };
 		DDBB4BEA21E759BA00618D86 /* UIImage+AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB4BE921E759BA00618D86 /* UIImage+AddMethod.m */; };
+		DDF8F1ED226D5F5F00E79EC7 /* TitleSegmentThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF8F1EC226D5F5F00E79EC7 /* TitleSegmentThirdViewController.m */; };
+		DDF8F1F0226D602F00E79EC7 /* Quartz2dDraw1View.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF8F1EF226D602F00E79EC7 /* Quartz2dDraw1View.m */; };
 		DDFF4B6221F6B3100009B59D /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B5021F6B3100009B59D /* TZAssetCell.m */; };
 		DDFF4B6321F6B3100009B59D /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B5121F6B3100009B59D /* TZVideoPlayerController.m */; };
 		DDFF4B6421F6B3100009B59D /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFF4B5221F6B3100009B59D /* TZAssetModel.m */; };
@@ -98,12 +114,35 @@
 		DD0ADBB721F5A8BE001D91A4 /* NSArray+AddMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+AddMethod.m"; sourceTree = "<group>"; };
 		DD0ADBB921F5AA65001D91A4 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
 		DD0ADBBA21F5AA68001D91A4 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		DD1A27C3225C48A9004547AB /* TitleSegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleSegmentViewController.h; sourceTree = "<group>"; };
+		DD1A27C4225C48A9004547AB /* TitleSegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleSegmentViewController.m; sourceTree = "<group>"; };
+		DD1A27C9225C49BE004547AB /* TitleSegmentSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleSegmentSecondViewController.h; sourceTree = "<group>"; };
+		DD1A27CA225C49BE004547AB /* TitleSegmentSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleSegmentSecondViewController.m; sourceTree = "<group>"; };
+		DD1A27CC225C49DA004547AB /* TitleSegmentOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleSegmentOneViewController.h; sourceTree = "<group>"; };
+		DD1A27CD225C49DA004547AB /* TitleSegmentOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleSegmentOneViewController.m; sourceTree = "<group>"; };
+		DD1A27CF225C4A7F004547AB /* CustomSegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomSegmentView.h; sourceTree = "<group>"; };
+		DD1A27D0225C4A7F004547AB /* CustomSegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentView.m; sourceTree = "<group>"; };
+		DD4F686D22CB6EE4007BFC15 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		DD4F686F22CB6EEF007BFC15 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		DD4F687122CB6EF6007BFC15 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DD4F687322CB6EFF007BFC15 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DD4F687522CB6F0A007BFC15 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		DD4F687722CB6F18007BFC15 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		DD5A69D1224B740800AA8BDF /* UILabel+TYCAttributeTextTapAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TYCAttributeTextTapAction.m"; sourceTree = "<group>"; };
 		DD5A69D2224B740800AA8BDF /* RunTimeGetAllIvarAndProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeGetAllIvarAndProperty.h; sourceTree = "<group>"; };
 		DD5A69D3224B740800AA8BDF /* UILabel+TYCAttributeTextTapAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TYCAttributeTextTapAction.h"; sourceTree = "<group>"; };
 		DD5A69D4224B740800AA8BDF /* RunTimeGetAllIvarAndProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeGetAllIvarAndProperty.m; sourceTree = "<group>"; };
+		DD5A69D8224CAF6100AA8BDF /* HomePageTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageTableView.h; sourceTree = "<group>"; };
+		DD5A69D9224CAF6100AA8BDF /* HomePageTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageTableView.m; sourceTree = "<group>"; };
+		DD5A69DE224CB12200AA8BDF /* HomePageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageCell.h; sourceTree = "<group>"; };
+		DD5A69DF224CB12200AA8BDF /* HomePageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageCell.m; sourceTree = "<group>"; };
+		DD5A69E1224CB2E800AA8BDF /* DataStringMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStringMacros.h; sourceTree = "<group>"; };
+		DD5A69E2224CC48300AA8BDF /* AttributedStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributedStringViewController.h; sourceTree = "<group>"; };
+		DD5A69E3224CC48300AA8BDF /* AttributedStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributedStringViewController.m; sourceTree = "<group>"; };
 		DD86857D222E1E0E00775399 /* UIBarButtonItem+TYC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TYC.h"; sourceTree = "<group>"; };
 		DD86857E222E1E0E00775399 /* UIBarButtonItem+TYC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TYC.m"; sourceTree = "<group>"; };
+		DD8EFBCD22CCDF7C002CA0D6 /* TYCTestBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYCTestBtn.h; sourceTree = "<group>"; };
+		DD8EFBCE22CCDF82002CA0D6 /* TYCTestBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYCTestBtn.m; sourceTree = "<group>"; };
 		DDBB4B5F21E6DCBB00618D86 /* TYCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBB4B6221E6DCBB00618D86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DDBB4B6321E6DCBB00618D86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -155,6 +194,10 @@
 		DDBB4BE621E756AF00618D86 /* CustomNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationView.m; sourceTree = "<group>"; };
 		DDBB4BE821E759BA00618D86 /* UIImage+AddMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+AddMethod.h"; sourceTree = "<group>"; };
 		DDBB4BE921E759BA00618D86 /* UIImage+AddMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AddMethod.m"; sourceTree = "<group>"; };
+		DDF8F1EB226D5F5F00E79EC7 /* TitleSegmentThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleSegmentThirdViewController.h; sourceTree = "<group>"; };
+		DDF8F1EC226D5F5F00E79EC7 /* TitleSegmentThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitleSegmentThirdViewController.m; sourceTree = "<group>"; };
+		DDF8F1EE226D602F00E79EC7 /* Quartz2dDraw1View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quartz2dDraw1View.h; sourceTree = "<group>"; };
+		DDF8F1EF226D602F00E79EC7 /* Quartz2dDraw1View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quartz2dDraw1View.m; sourceTree = "<group>"; };
 		DDFF4B4D21F6B3100009B59D /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
 		DDFF4B4E21F6B3100009B59D /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
 		DDFF4B4F21F6B3100009B59D /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
@@ -219,6 +262,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4F687822CB6F18007BFC15 /* libsqlite3.tbd in Frameworks */,
+				DD4F687622CB6F0A007BFC15 /* libiconv.tbd in Frameworks */,
+				DD4F687422CB6EFF007BFC15 /* libz.tbd in Frameworks */,
+				DD4F687222CB6EF7007BFC15 /* AVFoundation.framework in Frameworks */,
+				DD4F687022CB6EEF007BFC15 /* GLKit.framework in Frameworks */,
+				DD4F686E22CB6EE4007BFC15 /* OpenAL.framework in Frameworks */,
 				230C9B957942DA6517CC3BB9 /* libPods-TYCProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +292,12 @@
 		5DB6083A3564EC87939C6672 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD4F687722CB6F18007BFC15 /* libsqlite3.tbd */,
+				DD4F687522CB6F0A007BFC15 /* libiconv.tbd */,
+				DD4F687322CB6EFF007BFC15 /* libz.tbd */,
+				DD4F687122CB6EF6007BFC15 /* AVFoundation.framework */,
+				DD4F686F22CB6EEF007BFC15 /* GLKit.framework */,
+				DD4F686D22CB6EE4007BFC15 /* OpenAL.framework */,
 				B1BBB53F2239593F67A27E98 /* libPods-TYCProject.a */,
 			);
 			name = Frameworks;
@@ -255,6 +310,21 @@
 				C26E13936B08FFA4342E7691 /* Pods-TYCProject.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD5A69D7224CAF3000AA8BDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A69D8224CAF6100AA8BDF /* HomePageTableView.h */,
+				DD5A69D9224CAF6100AA8BDF /* HomePageTableView.m */,
+				DD5A69DE224CB12200AA8BDF /* HomePageCell.h */,
+				DD5A69DF224CB12200AA8BDF /* HomePageCell.m */,
+				DD1A27CF225C4A7F004547AB /* CustomSegmentView.h */,
+				DD1A27D0225C4A7F004547AB /* CustomSegmentView.m */,
+				DDF8F1EE226D602F00E79EC7 /* Quartz2dDraw1View.h */,
+				DDF8F1EF226D602F00E79EC7 /* Quartz2dDraw1View.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		DDBB4B5621E6DCBA00618D86 = {
@@ -362,34 +432,30 @@
 		DDBB4B9921E6E0AA00618D86 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				DDBB4B9A21E6E0AA00618D86 /* Models */,
+				DD5A69D7224CAF3000AA8BDF /* Views */,
 				DDBB4B9B21E6E0AA00618D86 /* Controllers */,
-				DDBB4B9C21E6E0AA00618D86 /* Views */,
 			);
 			path = HomePage;
-			sourceTree = "<group>";
-		};
-		DDBB4B9A21E6E0AA00618D86 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		DDBB4B9B21E6E0AA00618D86 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DDFF4B6D21F6B3360009B59D /* FilmPrescriptionUpload */,
 				DDBB4BC321E6F63D00618D86 /* HomePageViewController.h */,
 				DDBB4BC421E6F63D00618D86 /* HomePageViewController.m */,
+				DD1A27C3225C48A9004547AB /* TitleSegmentViewController.h */,
+				DD1A27C4225C48A9004547AB /* TitleSegmentViewController.m */,
+				DD1A27CC225C49DA004547AB /* TitleSegmentOneViewController.h */,
+				DD1A27CD225C49DA004547AB /* TitleSegmentOneViewController.m */,
+				DD1A27C9225C49BE004547AB /* TitleSegmentSecondViewController.h */,
+				DD1A27CA225C49BE004547AB /* TitleSegmentSecondViewController.m */,
+				DDF8F1EB226D5F5F00E79EC7 /* TitleSegmentThirdViewController.h */,
+				DDF8F1EC226D5F5F00E79EC7 /* TitleSegmentThirdViewController.m */,
+				DD5A69E2224CC48300AA8BDF /* AttributedStringViewController.h */,
+				DD5A69E3224CC48300AA8BDF /* AttributedStringViewController.m */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		DDBB4B9C21E6E0AA00618D86 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		DDBB4B9D21E6E0AA00618D86 /* MyKit */ = {
@@ -456,7 +522,6 @@
 		DDBB4BA121E6E0AA00618D86 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				DDFF4B6D21F6B3360009B59D /* FilmPrescriptionUpload */,
 				DDBB4BA221E6E0AA00618D86 /* Models */,
 				DDBB4BA321E6E0AA00618D86 /* Controllers */,
 				DDBB4BA421E6E0AA00618D86 /* Views */,
@@ -513,6 +578,7 @@
 			children = (
 				DDBB4BD121E7227900618D86 /* RuleMacros.h */,
 				DDBB4BD221E722B000618D86 /* ApiMacros.h */,
+				DD5A69E1224CB2E800AA8BDF /* DataStringMacros.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -537,6 +603,8 @@
 				DDBB4BB221E6E1AA00618D86 /* BaseTabBarViewController.m */,
 				DDBB4BE221E7561800618D86 /* CenterViewController.h */,
 				DDBB4BE321E7561800618D86 /* CenterViewController.m */,
+				DD8EFBCD22CCDF7C002CA0D6 /* TYCTestBtn.h */,
+				DD8EFBCE22CCDF82002CA0D6 /* TYCTestBtn.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -810,18 +878,20 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TYCProject/Pods-TYCProject-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TYCProject/Pods-TYCProject-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/YXFrameworks/Bundles/PlayerSDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PlayerSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TYCProject/Pods-TYCProject-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TYCProject/Pods-TYCProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -832,15 +902,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDFF4B6A21F6B3100009B59D /* TZPhotoPickerController.m in Sources */,
+				DDF8F1F0226D602F00E79EC7 /* Quartz2dDraw1View.m in Sources */,
+				DDF8F1ED226D5F5F00E79EC7 /* TitleSegmentThirdViewController.m in Sources */,
 				DDFF4B8B21F6B3360009B59D /* FilmPrescriptionUploadDetailStatuCell.m in Sources */,
 				DDBB4BBF21E6F49300618D86 /* UIViewExt.m in Sources */,
 				DDFF4B8F21F6B3360009B59D /* FilmPrescriptionUploadDetailTableView.m in Sources */,
 				DDFF4B8C21F6B3360009B59D /* FilmPrescriptionUploadView.m in Sources */,
 				DDFF4B9F21FAE02C0009B59D /* FooterButtonView.m in Sources */,
 				DDFF4B8D21F6B3360009B59D /* TYCTestCell.m in Sources */,
+				DD1A27D1225C4A7F004547AB /* CustomSegmentView.m in Sources */,
 				DDFF4B6B21F6B3100009B59D /* TZPhotoPreviewCell.m in Sources */,
 				DDFF4B9C21FADCED0009B59D /* UIViewUtil.m in Sources */,
 				DDBB4BE421E7561800618D86 /* CenterViewController.m in Sources */,
+				DD5A69E4224CC48300AA8BDF /* AttributedStringViewController.m in Sources */,
 				DDFF4B6321F6B3100009B59D /* TZVideoPlayerController.m in Sources */,
 				DDBB4BC521E6F63D00618D86 /* HomePageViewController.m in Sources */,
 				DDBB4B6721E6DCBB00618D86 /* ViewController.m in Sources */,
@@ -851,6 +925,7 @@
 				DDBB4BC821E6F64B00618D86 /* MineViewController.m in Sources */,
 				DDBB4BB021E6E15D00618D86 /* BaseViewController.m in Sources */,
 				DDBB4BD821E733B700618D86 /* CustomTabBar.m in Sources */,
+				DD5A69E0224CB12200AA8BDF /* HomePageCell.m in Sources */,
 				DDBB4BD021E7200E00618D86 /* Constant.m in Sources */,
 				DDBB4BDB21E738A800618D86 /* CustomBarButton.m in Sources */,
 				DDBB4BE721E756AF00618D86 /* CustomNavigationView.m in Sources */,
@@ -862,14 +937,18 @@
 				DDFF4B8E21F6B3360009B59D /* FilmPrescriptionView.m in Sources */,
 				DDFF4B8821F6B3360009B59D /* FilmPrescriptionUploadViewController.m in Sources */,
 				DDFF4B9121F6B3360009B59D /* FilmPrescriptionUploadSectionCell.m in Sources */,
+				DD1A27C5225C48A9004547AB /* TitleSegmentViewController.m in Sources */,
 				DDFF4B6621F6B3100009B59D /* UIView+Layout.m in Sources */,
 				DDFF4B6721F6B3100009B59D /* TZPhotoPreviewController.m in Sources */,
+				DD1A27CE225C49DA004547AB /* TitleSegmentOneViewController.m in Sources */,
 				DDBB4BAD21E6E13800618D86 /* BaseNavgationViewController.m in Sources */,
 				DDFF4B9021F6B3360009B59D /* FilmPrescriptionUploadOrderHeadView.m in Sources */,
 				DDFF4BAB21FB03020009B59D /* YXAlertView.m in Sources */,
 				DDBB4BEA21E759BA00618D86 /* UIImage+AddMethod.m in Sources */,
 				DDBB4BB321E6E1AA00618D86 /* BaseTabBarViewController.m in Sources */,
+				DD1A27CB225C49BE004547AB /* TitleSegmentSecondViewController.m in Sources */,
 				DD0ADBBD21F5AA69001D91A4 /* UITextView+Placeholder.m in Sources */,
+				DD8EFBCF22CCDF82002CA0D6 /* TYCTestBtn.m in Sources */,
 				DDBB4B7221E6DCBF00618D86 /* main.m in Sources */,
 				DDFF4B6221F6B3100009B59D /* TZAssetCell.m in Sources */,
 				DDFF4B6521F6B3100009B59D /* NSBundle+TZImagePicker.m in Sources */,
@@ -880,6 +959,7 @@
 				DDFF4BA521FAE8400009B59D /* PrescriptionBuyDrugBottomAlertView.m in Sources */,
 				DD5A69D6224B740800AA8BDF /* RunTimeGetAllIvarAndProperty.m in Sources */,
 				DDBB4BD521E724F300618D86 /* TNetworking.m in Sources */,
+				DD5A69DA224CAF6100AA8BDF /* HomePageTableView.m in Sources */,
 				DDFF4B8921F6B3360009B59D /* CustomPrescriptionUploadManager.m in Sources */,
 				DDBB4B6421E6DCBB00618D86 /* AppDelegate.m in Sources */,
 				DDFF4B8A21F6B3360009B59D /* SectionModel.m in Sources */,
@@ -1058,6 +1138,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 832LY843KW;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TYCProject/Classes/Main/Config/TYCProject.pch;
 				INFOPLIST_FILE = TYCProject/Info.plist;
@@ -1065,6 +1146,61 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FMDB\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"SwfViewIOS\"",
+					"-l\"avcodec\"",
+					"-l\"avformat\"",
+					"-l\"avutil\"",
+					"-l\"iconv\"",
+					"-l\"jpeg_ios\"",
+					"-l\"libfaad\"",
+					"-l\"speex\"",
+					"-l\"sqlite3\"",
+					"-l\"swresample\"",
+					"-l\"swscale\"",
+					"-l\"x264\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GPUImage\"",
+					"-framework",
+					"\"GSCommonKit\"",
+					"-framework",
+					"\"GSDocKit\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenAL\"",
+					"-framework",
+					"\"PlayerSDK\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = miaoshou.net.TYCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1080,6 +1216,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 832LY843KW;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TYCProject/Classes/Main/Config/TYCProject.pch;
 				INFOPLIST_FILE = TYCProject/Info.plist;
@@ -1087,6 +1224,61 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"FMDB\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJExtension\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"SwfViewIOS\"",
+					"-l\"avcodec\"",
+					"-l\"avformat\"",
+					"-l\"avutil\"",
+					"-l\"iconv\"",
+					"-l\"jpeg_ios\"",
+					"-l\"libfaad\"",
+					"-l\"speex\"",
+					"-l\"sqlite3\"",
+					"-l\"swresample\"",
+					"-l\"swscale\"",
+					"-l\"x264\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GPUImage\"",
+					"-framework",
+					"\"GSCommonKit\"",
+					"-framework",
+					"\"GSDocKit\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenAL\"",
+					"-framework",
+					"\"PlayerSDK\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = miaoshou.net.TYCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";

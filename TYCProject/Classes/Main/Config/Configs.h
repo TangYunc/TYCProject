@@ -15,6 +15,7 @@
 #import "Constant.h"
 #import "RuleMacros.h"
 #import "ApiMacros.h"
+#import "DataStringMacros.h"
 #import "CustomNavigationView.h"
 //category
 #import "UIView+TYCViewController.h"
@@ -22,6 +23,7 @@
 #import "NSString+AddMethod.h"
 #import "UITableViewCell+ShareCell.h"
 #import "UIBarButtonItem+TYC.h"
+#import "UILabel+TYCAttributeTextTapAction.h"
 //extension
 
 //Tools
@@ -33,7 +35,7 @@
 //第三方
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <SDWebImage/UIButton+WebCache.h>
-
+#import <Masonry/Masonry.h>
 
 
 #endif /* Configs_h */

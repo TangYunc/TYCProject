@@ -203,7 +203,7 @@
 }
 
 //价格：¥300.66
-- (NSMutableAttributedString *)changeTextContent:(NSString *)textContent
++ (NSMutableAttributedString *)changeTextContent:(NSString *)textContent
 
           stringArray:(NSArray *)strArray
 
@@ -336,7 +336,7 @@
     return labelSize;
 }
 
-- (NSArray<NSValue *> *)getRangeStrArrWithInitialText:(NSString*)initialText regexString:(NSString*)regexString{
++ (NSArray<NSValue *> *)getRangeStrArrWithInitialText:(NSString*)initialText regexString:(NSString*)regexString{
     /*
      备注：1、array中存的是N个字典，每个字典中存了两个值：子串、子串位置，结构如下图
      2、字典中的range是NSValue，需要转换成NSRange使用
@@ -357,7 +357,7 @@
     return resultMArr;
 }
 
-- (void)searchAllTextRangeWithInitialArray:(NSMutableArray*)initialArray initialText:(NSString*)initialText regexString:(NSString*)regexString{
++ (void)searchAllTextRangeWithInitialArray:(NSMutableArray*)initialArray initialText:(NSString*)initialText regexString:(NSString*)regexString{
     //思路：通过循环，搜索到第一个之后，先把第一个的信息打包成字典存进数组，再次搜索，把上次的信息字典取出来，根据上一个位置信息，把主串截取为在那之后的串，记录新串的头字符在主串中的位置，在新串中再次搜索，搜索到的range的location需要加上新串的头字符在主串中的位置，打包信息存进数组，再次搜索，直到搜索不到信息。
     if (initialArray.count == 0) {//如果此时传入的array是空
         NSRange range = [initialText rangeOfString:regexString options:NSRegularExpressionSearch];

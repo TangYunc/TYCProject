@@ -88,16 +88,16 @@ NS_ASSUME_NONNULL_BEGIN
  字符串2颜色2字体2...一一对应，具体效果，测试案例便可知晓
  
  */
-- (NSMutableAttributedString *)changeTextLab:(UILabel *)myLabel
++ (NSMutableAttributedString *)changeTextContent:(NSString *)textContent
 
-          stringArray:(NSArray *)strArray
+                                     stringArray:(NSArray *)strArray
 
-           colorArray:(NSArray *)colorArray
+                                      colorArray:(NSArray *)colorArray
 
-            fontArray:(NSArray *)fontArray;
+                                       fontArray:(NSArray *)fontArray;
 
 //获取字符串中多个相同字符串的所有range
-- (NSArray<NSValue *> *)getRangeStrArrWithInitialText:(NSString*)initialText regexString:(NSString*)regexString;
++ (NSArray<NSValue *> *)getRangeStrArrWithInitialText:(NSString*)initialText regexString:(NSString*)regexString;
 
 // 获取行间距类型
 +(NSDictionary *)getAttributeWithlineSpacing:(CGFloat)lineSpacing font:(UIFont *)font;
