@@ -880,7 +880,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TYCProject/Pods-TYCProject-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/YXFrameworks/Bundles/PlayerSDK.bundle",
+				"${PODS_ROOT}/ManagerThirdSDKs/ManagerThirdSDKs/Classes/263SDK/PlayerSDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (

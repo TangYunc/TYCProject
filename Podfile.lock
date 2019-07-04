@@ -14,16 +14,24 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - AudioManager (0.1.1):
-    - AudioManager/AudioManager (= 0.1.1)
-  - AudioManager/AudioManager (0.1.1):
-    - AudioManager/AudioManager/PlayerManager (= 0.1.1)
-    - AudioManager/AudioManager/RecorderManager (= 0.1.1)
-  - AudioManager/AudioManager/PlayerManager (0.1.1)
-  - AudioManager/AudioManager/RecorderManager (0.1.1)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - ManagerThirdSDKs (0.1.1):
+    - ManagerThirdSDKs/263SDK (= 0.1.1)
+    - ManagerThirdSDKs/AudioManager (= 0.1.1)
+  - ManagerThirdSDKs/263SDK (0.1.1):
+    - ManagerThirdSDKs/263SDK/263Frameworks (= 0.1.1)
+    - ManagerThirdSDKs/263SDK/Libs (= 0.1.1)
+  - ManagerThirdSDKs/263SDK/263Frameworks (0.1.1)
+  - ManagerThirdSDKs/263SDK/Libs (0.1.1):
+    - ManagerThirdSDKs/263SDK/Libs/ffmpeg (= 0.1.1)
+  - ManagerThirdSDKs/263SDK/Libs/ffmpeg (0.1.1)
+  - ManagerThirdSDKs/AudioManager (0.1.1):
+    - ManagerThirdSDKs/AudioManager/PlayerManager (= 0.1.1)
+    - ManagerThirdSDKs/AudioManager/RecorderManager (= 0.1.1)
+  - ManagerThirdSDKs/AudioManager/PlayerManager (0.1.1)
+  - ManagerThirdSDKs/AudioManager/RecorderManager (0.1.1)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJExtension (3.0.17)
@@ -31,18 +39,16 @@ PODS:
   - SDWebImage (5.0.6):
     - SDWebImage/Core (= 5.0.6)
   - SDWebImage/Core (5.0.6)
-  - YXFrameworks (0.0.1)
 
 DEPENDENCIES:
   - AFNetworking
-  - AudioManager (from `https://gitee.com/a_milk_rabbit_or_a_good_white_sugar/AudioManager.git`)
   - FMDB
+  - ManagerThirdSDKs (from `https://gitee.com/a_milk_rabbit_or_a_good_white_sugar/ManagerThirdSDKs.git`)
   - Masonry
   - MBProgressHUD
   - MJExtension
   - MJRefresh
   - SDWebImage
-  - YXFrameworks (from `http://139.196.79.152:81/zhangliangyu/YXFrameworks.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -55,30 +61,24 @@ SPEC REPOS:
     - SDWebImage
 
 EXTERNAL SOURCES:
-  AudioManager:
-    :git: https://gitee.com/a_milk_rabbit_or_a_good_white_sugar/AudioManager.git
-  YXFrameworks:
-    :git: http://139.196.79.152:81/zhangliangyu/YXFrameworks.git
+  ManagerThirdSDKs:
+    :git: https://gitee.com/a_milk_rabbit_or_a_good_white_sugar/ManagerThirdSDKs.git
 
 CHECKOUT OPTIONS:
-  AudioManager:
-    :commit: 1af9fb864ddb2d84be3082010ba31934bc33e575
-    :git: https://gitee.com/a_milk_rabbit_or_a_good_white_sugar/AudioManager.git
-  YXFrameworks:
-    :commit: 59aae8c036d6e42736f64a2efedd090ccd7e046a
-    :git: http://139.196.79.152:81/zhangliangyu/YXFrameworks.git
+  ManagerThirdSDKs:
+    :commit: c9b44611e4cb228b11d41f52f0f101cf553ee902
+    :git: https://gitee.com/a_milk_rabbit_or_a_good_white_sugar/ManagerThirdSDKs.git
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  AudioManager: 70360c24a86caa1060144c7b00d4215a8fc9729e
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  ManagerThirdSDKs: 55073e107ec9b6bf8fc58cec75631afa9499f611
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
-  YXFrameworks: cb36946ab1db5840db8f26514dfc57799d2eec48
 
-PODFILE CHECKSUM: 87a901604f2524bc903a116381af8411a9d2cc04
+PODFILE CHECKSUM: 668ff4a71e9778060d691dd4f45581601f019a60
 
 COCOAPODS: 1.6.1
